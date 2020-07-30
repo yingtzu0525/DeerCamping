@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+@import"cardanimation.css";
+
+:root {
+    --title_size: 45px;
+    --title_color: #4FB3BF;
+    --title_weight: 500;
+    --text_size: 1rem;
+    --text_color: #666666;
+    --text_weight: 400;
+    --text_height: 2rem;
+    --price_size: 30px;
+    --price_color: #C75B39;
+    --price_weight: 700;
+    --article_size: 1.5rem;
+    --article_color: #666666;
+    --article_weight: 500;
+    --legend_size: 12px;
+    --legend_color: #666666;
+    --legend_weight: 400;
+    --card_size: 1rem;
+    --card_color: #666666;
+    --card_weight: 400;
+    --card_height: 2rem;
+    --tag_size: 16px;
+    --tag_color: #FFFFFF;
+    --tag_weight: 400;
+    --pColor: #00838F;
+    --plColor: #4FB3BF;
+    --bgColor: #FAFAFA;
+    --bglColor: #DCEDC8;
+    --brColor: #EDEDED;
+    --sColor: #FF8A65;
+    --sdColor: #C75B39;
+    --tagColor: #dedede;
+    --tColor: #666666;
+    --inputColor: #e4e4e4;
+}
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--article_color);
+}
+
+
+/* tab
+===================================*/
+
+.nav-link {
+    color: var(--article_color) !important;
+    height: 30px;
+    line-height: 8px;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--sColor) var(--tagColor) var(--tagColor);
+    border-top: 4px solid var(--sColor);
+    border-radius: 0px;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    border-color: var(--tagColor) var(--tagColor);
+    border-top: 4px solid var(--sColor);
+    border-radius: 0px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--tagColor);
+}
+
+
+/* campInfoArea */
+
+.eqpArea {
+    border: 1px solid var(--card_color);
+    border-top: 5px solid var(--sColor);
+}
+
+#campInfoArea div p:first-child {
+    font-size: var(--article_size);
+}
+
+#campInfoArea div span {
+    color: var(--sdColor);
+}
+
+@media screen and (max-width: 900px) {
+    .fas {
+        font-size: 24px;
+    }
+}
+
+.eqpArea p {
+    font-size: 9px;
+}
+
+.price {
+    font-size: var(--article_size);
+    color: var(--sdColor);
+}
+
+li {
+    list-style-type: none;
+}
+
+.campAreainfo button {
+    color: var(--sdColor);
+    background-color: transparent;
+    border: 1px solid var(--sdColor);
+    border-radius: 0px;
+    width: 16vw;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.campAreainfo button:hover {
+    background-color: var(--sdColor);
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.campAreainfo button:focus {
+    outline: 0;
+}
+
+
+/* campAreainfo */
+
+.myArrow {
+    background-color: var(--sdColor);
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.mygradient {
+    position: absolute;
+    height: 205px;
+    width: 300px;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.025647759103641476) 0%, rgba(255, 255, 255, 0.9920343137254902) 94%, rgba(255, 255, 255, 1) 100%);
+    left: 67%;
+}
+.campAreapicsDetail{
+    width:100%;
+}
+
+.campAreapics img {
+    height: 200px;
+    width: 300px;
+}
+
+.campAreapics {
+    overflow: hidden;
+}
+
+
+/* BawkBox comment */
+
+.btn-bawkbox-widgets {
+    border: 1px solid var(--sdColor)!important;
+    border-radius: 0px !important;
+    font-size: var(--text_size) !important;
+    font-weight: var(--text_weight)!important;
+}
+
+.btn-bawkbox-widgets:hover {
+    background-color: var(--sdColor)!important;
+    color: white !important;
+}
+
+.bawkbox-widgets-input,
+.bawkbox-widgets-textarea {
+    border-radius: 0px !important;
+}
+
+disclaimer {
+    display: none !important;
+}
+
+#admin-btn {
+    display: none !important;
+}
+
+.bawkbox-widgets-input:nth-child(3) {
+    display: none !important;
+}
+
+@media screen and (min-width: 900px) {
+    .btn-align-right {
+        margin-top: 27%;
+        margin-left: 65%;
+    }
+    /*最外圍 */
+    star-rating {
+        position: relative!important;
+    }
+    /* 右邊 */
+    .ratings-form,
+    .recorded-rating {
+        background: #e7e7e77a!important;
+        position: relative!important;
+        margin-left: 80%;
+        width: 53vw;
+        border-top: none!important;
+        border-bottom: 1px solid var(--text_color);
+        padding: 15% 10% 10% 10% !important;
+    }
+    /* 左邊 */
+    .ws-heading {
+        position: absolute!important;
+        left: 14%;
+        top: 15%;
+    }
+    .btn-bawkbox-widgets {
+        position: absolute!important;
+        left: 14%;
+        top: 35%;
+    }
+}
+
+
+/* 訂位須知 */
+
+#noticeArea div p:first-child {
+    font-size: var(--article_size);
+    color: var(--sdColor);
+}
+
+#noticeArea thead th {
+    background-color: var(--sColor);
+}
+
+#noticeArea th {
+    font-weight: var(--text_weight);
+}

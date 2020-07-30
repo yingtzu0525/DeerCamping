@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿營|Deer Camping</title>
+    <!-- bootstrap/js -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/bootstrap/jquery.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f167260e46.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/deercard_article.css">
+    <link rel="stylesheet" href="/css/deercard_camp.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/searchBar.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5">
+
+
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!-- 01_首頁 -->
+    <div id="section1">
+
+        <p class="text-center">露營新生活</p>
+
+        <!-- 搜尋BAR -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-sm-12">
+
+
+                    <div class="row pt-5 pb-5" id="searchBar">
+                        <!-- 想去哪裡露營呢？ -->
+                        <div class="mb-3 col-lg-3 col-sm-12 d-flex justify-content-lg-start justify-content-center">想去哪裡露營呢？</div>
+                        <!-- 地區 -->
+                        <div class="col-lg-2 col-sm-12">
+
+                            <div class="searchOption row d-flex flex-row col-12">
+                                <i class="fas fa-map-marker-alt col-2 p-0 pt-1"></i>
+                                <select name="" id="" class="col-10">
+                                <option value="">北部</option>
+                                <option value="">中部</option>
+                                <option value="">南部</option>
+                                <option value="">東部</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 日期 -->
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="searchOption row d-flex flex-row col-12">
+                                <i class="far fa-calendar-alt col-2 p-0 pt-1"></i></i>
+                                <select name="" id="" class="col-10">
+                                <option value="">2020/07/28</option>
+                                <option value="">2020/07/29</option>
+                                <option value="">2020/07/30</option>
+                                <option value="">2020/07/31</option>
+                            </select>
+                            </div>
+                        </div>
+
+                        <!-- 帳數 -->
+                        <div class="col-lg-2 col-sm-12">
+                            <div class="searchOption row d-flex flex-row col-12">
+                                <i class="fas fa-campground col-2 p-0 pt-1"></i>
+                                <select name="" id="" class="col-10">
+                                <option value="">1帳</option>
+                                <option value="">2帳</option>
+                                <option value="">3帳</option>
+                                <option value="">4帳</option>
+                            </select>
+                            </div>
+
+                        </div>
+
+                        <!-- 立即搜尋鈕 -->
+                        <div class="col-lg-2 col-sm-12">
+                            <button class="col-12">立即搜尋<i class="fas fa-search pl-2"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 02_熱門營區推薦 -->
+    <div id="section2" class="py-5">
+
+        <!--標題-->
+        <div class="deertitle text-center py-4">
+            <p class="title">熱門營區推薦</p>
+            <p class="subtitle">走出戶外輕鬆露營，將露營融為生活的一部分</p>
+        </div>
+
+        <!--營區們-->
+        <div class="container-fluid pb-4">
+            <div class="deerCard1 row justify-content-center pb-5">
+                <div class="row flex-row col-lg-10 col-sm-12">
+
+                    <!-- 營區01 -->
+                    <div class="col-lg-4 col-sm-12 py-2">
+                        <div class="card d-flex justify-content-between">
+                            <!-- 營區照片 -->
+                            <img src="image/index/1856.jpg" alt="">
+
+                            <!-- 營區名字/地區 -->
+                            <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                <span>秘密基地露營區</span>
+                                <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between px-4 py-4">
+                                <!-- 營區熱門標籤-->
+                                <span class="badge text-white px-2 py-2">兒童遊樂區</span>
+                                <!--按鈕查看-->
+                                <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+
+                            <!--按鈕下訂-->
+                            <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                        </div>
+                    </div>
+
+                    <!-- 營區02 -->
+                    <div class="col-lg-4 col-sm-12 py-2">
+                        <div class="card d-flex justify-content-between">
+
+                            <!-- 營區照片 -->
+                            <img src="image/index/1856.jpg" alt="">
+
+                            <!-- 營區名字/地區 -->
+                            <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                <span>秘密基地露營區</span>
+                                <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between px-4 py-4">
+                                <!-- 營區熱門標籤-->
+                                <span class="badge text-white px-2 py-2">兒童遊樂區</span>
+                                <!--按鈕查看-->
+                                <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+
+                            <!--按鈕下訂-->
+                            <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                        </div>
+                    </div>
+
+                    <!-- 營區03 -->
+                    <div class="col-lg-4 col-sm-12 py-2">
+                        <div class="card d-flex justify-content-between">
+                            <!-- 營區照片 -->
+                            <img src="image/index/1856.jpg" alt="">
+
+                            <!-- 營區名字/地區 -->
+                            <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                <span>秘密基地露營區</span>
+                                <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between px-4 py-4">
+                                <!-- 營區熱門標籤-->
+                                <span class="badge text-white px-2 py-2">兒童遊樂區</span>
+                                <!--按鈕查看-->
+                                <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+
+                            <!--按鈕下訂-->
+                            <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 03_主題營區推薦 -->
+    <div id="section3" class="py-5">
+
+        <!--標題-->
+        <div class="deertitle text-center py-4">
+            <p class="title text-white">主題營區推薦</p>
+            <p class="subtitle text-white">不需攜帶露營裝備，收拾簡單行李、帶好相機，在擁抱自然、洗滌都市塵擾，能更深層的放鬆淨心</p>
+        </div>
+
+        <!--主題們-->
+        <div class="container-fluid pb-4">
+            <div class="row justify-content-center pb-5">
+
+                <div class="row flex-row col-lg-10 col-sm-12">
+
+                    <!-- 清涼玩水 -->
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-6 mt-3 px-2 py-2">
+                        <a href="#">
+                            <div class="deerCard2">
+                                <span class="text-white">清涼玩水露營</span>
+                                <div class="imgLayer">
+                                    <div class="imgCover"></div>
+                                    <img src="image/index/13846.jpg" alt="" style="bottom:60px;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 親子同樂 -->
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-6 mt-3 px-2 py-2">
+                        <a href="#">
+                            <div class="deerCard2">
+                                <span class="text-white">親子同樂露營</span>
+                                <div class="imgLayer">
+                                    <div class="imgCover"></div>
+                                    <img src="image/index/2545468.jpg" alt="" style="bottom:130px;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- 特色文青 -->
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-6 mt-3 px-2 py-2">
+                        <a href="#">
+                            <div class="deerCard2">
+                                <span class="text-white">特色文青露營</span>
+                                <div class="imgLayer">
+                                    <div class="imgCover"></div>
+                                    <img src="image/index/1856.jpg" alt="" style="bottom:70px;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 新手友善 -->
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-6 mt-3 px-2 py-2">
+                        <a href="#">
+                            <div class="deerCard2">
+                                <span class="text-white">新手友善露營</span>
+                                <div class="imgLayer">
+                                    <div class="imgCover"></div>
+                                    <img src="image/index/2931940.jpg" alt="" style="bottom:130px;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 04_本月主題文章 -->
+    <div id="section4">
+
+        <div class="row">
+            <div class="textarea col col-lg-6">
+                <p class="">本月主題文章</p>
+                <p>走吧！戲水消暑去全台12個戲水天堂露營區</p>
+                <p>說到夏日消暑，大家會想到什麼活動？怎麼想也應該是「去玩水」 吧？ 台灣四面臨海，又有許多溪谷，因此衍生了許多種玩水的方式： 泛舟、小溪、海水浴場、游泳池、泡冷泉、氣墊戲水道等，隨營區 周邊景點和顧客族群不同，玩水方式與設施也不盡相同，現在我們 就來介紹周邊有小溪的戲水天堂營區，讓大家都能清涼一夏！</p>
+                <button>繼續閱讀</button>
+
+            </div>
+
+            <div class="picarea col col-lg-6">
+                <img src="image/index/1856.jpg" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 05_熱門文章推薦 -->
+    <div id="section5" class="py-5">
+
+        <!--標題-->
+        <div class="deertitle text-center py-4">
+            <p class="title">熱門文章推薦</p>
+            <p class="subtitle">走出戶外輕鬆露營，將露營融為生活的一部分</p>
+        </div>
+
+        <!--Card-->
+        <div class="container-fluid pb-4">
+            <div class="deerCard3 row justify-content-center pb-5">
+                <div class="row flex-row col-lg-10 col-sm-12">
+
+                    <!-- 日記01 -->
+                    <div class="col-lg-4 col-sm-12 py-2">
+                        <div class="card">
+                            <!-- 日記照片 -->
+                            <img src="image/index/1856.jpg" alt="">
+
+                            <!-- 日記分類 -->
+                            <div class="d-flex px-4 mt-4">
+                                <span class="badge badge-pill text-white">遊記分享</span>
+                            </div>
+
+                            <!-- 日記標題 -->
+                            <div class="d-flex px-4 mt-2">
+                                <a href="" class="">五星級親子遊樂設施</a>
+                            </div>
+
+                            <!-- 日記描述 -->
+                            <div class="d-flex px-4 mt-2">
+                                <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 日記02 -->
+                    <div class="col-lg-4 col-sm-12 py-2">
+                        <div class="card">
+                            <!-- 日記照片 -->
+                            <img src="image/index/1856.jpg" alt="">
+
+                            <!-- 日記分類 -->
+                            <div class="d-flex px-4 mt-4">
+                                <span class="badge badge-pill text-white">遊記分享</span>
+                            </div>
+
+                            <!-- 日記標題 -->
+                            <div class="d-flex px-4 mt-2">
+                                <a href="" class="">五星級親子遊樂設施</a>
+                            </div>
+
+                            <!-- 日記描述 -->
+                            <div class="d-flex px-4 mt-2">
+                                <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 日記03 -->
+                    <div class="col-lg-4 col-sm-12 py-2">
+                        <div class="card">
+                            <!-- 日記照片 -->
+                            <img src="image/index/1856.jpg" alt="">
+
+                            <!-- 日記分類 -->
+                            <div class="d-flex px-4 mt-4">
+                                <span class="badge badge-pill text-white">遊記分享</span>
+                            </div>
+
+                            <!-- 日記標題 -->
+                            <div class="d-flex px-4 mt-2">
+                                <a href="" class="">五星級親子遊樂設施</a>
+                            </div>
+
+                            <!-- 日記描述 -->
+                            <div class="d-flex px-4 mt-2">
+                                <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- footer-->
+    <footer>
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/order.css">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5">
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENT START col-lg-8 -->
+    <div class="row justify-content-center no-gutters">
+        <!-- STEPS  -->
+        <section class="col-lg-8 col-md-12" id="heading">
+
+            <div class="stepTxt pill ">
+                <p class="">01</p>
+                <p>填寫訂位資料</p>
+            </div>
+
+            <div class="stepTxt">
+                <p>02</p>
+                <p>填寫訂購人資料</p>
+            </div>
+
+            <div class="stepTxt">
+                <p>03</p>
+                <p>完成預定</p>
+            </div>
+        </section>
+        <!-- STEPS  -->
+
+        <!-- 營位資訊 -->
+        <section class="col-lg-9 col-md-12  row justify-content-center" id="campInfo">
+            <div class="col-lg-6">
+                <span>營區資訊</span>
+                <div id="address">
+                    <span><i class="fas fa-campground mx-2"></i>桃園復興 拉拉山 木村的家露營區</span><br>
+                    <span><i class="fas fa-map-marker-alt mx-2"></i>桃園市復興區華陵里9鄰66-1號 (近鄉道116線)</span><br>
+                    <span><i class="fas fa-phone-alt mx-2"></i>02-2252-7966</span><br>
+                    <input type="date" value="" id="bookingDate">
+                </div>
+            </div>
+            <div class="col-lg-6 map">
+
+                <!-- GoogleMap -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.119692758605!2d121.40913261447419!3d24.68841185821294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346812d02829f859%3A0x26aaece34a3bf917!2z5ouJ5ouJ5bGx5pyo5p2R55qE5a626Zyy54ef5Y2A!5e0!3m2!1szh-TW!2stw!4v1595424287520!5m2!1szh-TW!2stw"
+                    width="" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+        <!-- 營位資訊 -->
+
+        <!-- 訂單表格 -->
+        <section class="col-lg-9 col-md-12" id="orderTable">
+            <div class="">
+                <form action="step2.html">
+                    <div col-12>
+                        <table style="width:100%">
+                            <tr>
+                                <th>區域</th>
+                                <th>預定帳數</th>
+                                <th>小計</th>
+                            </tr>
+                            <tr>
+                                <td class="row">
+                                    <div class="col-6 ">
+                                        <img src="./image/tourist-tents-near-river-sun_139914-159.jpg" alt="">
+                                    </div>
+                                    <div class="col-6 tent">
+                                        <h4>A區雨棚景觀區</h4>
+                                        <h4>$ 1200</h4>
+                                        <h5>剩餘 4 帳</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-info"><span>+</span></button>
+                                    <span></span>
+                                    <button class="btn btn-info"><span>-</span></button>
+                                </td>
+                                <!-- $ -->
+                                <td>$ 1200</td>
+                            </tr>
+                            <tr>
+                                <td class="row">
+                                    <div class="col-6">
+                                        <img src="./image/tourist-tents-near-river-sun_139914-159.jpg" alt="">
+                                    </div>
+                                    <div class="col-6 tent">
+                                        <h4>A區雨棚景觀區</h4>
+                                        <h4>$ 1200</h4>
+                                        <h5>剩餘 4 帳</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-info"><span>+</span></button>
+                                    <span></span>
+                                    <button class="btn btn-info"><span>-</span></button>
+                                </td>
+                                <!-- $ -->
+                                <td>$ 1200</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>總計</td>
+                                <td>$ 1200</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="width: 185%; height: 250px; margin-top: 30px;">
+                                        <div id="txtBox">
+                                            <b>overflow-y</b><span>設定如何處理元素框的顯示內容，主要有四個參數當元素框內容超出元素的矩框時要如何顯示，可以使用於區塊元素與內聯元素，自動顯示捲軸如需要限制在某個範圍內避免影響版面配置，或是內容當超出範圍時自動變成捲軸呈現方式。設定如何處理元素框的顯示內容，主要有四個參數當元素框內容超出元素的矩框時要如何顯示，可以使用於區塊元素與內聯元素，自動顯示捲軸如需要限制在某個範圍內避免影響版面配置，或是內容當超出範圍時自動變成捲軸呈現方式。</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div>
+                            <label for="checkbox"><input type="checkbox" id="checkbox" name="agree"
+                                    onclick="if (this.checked) {enable()} else {disable()}">&nbsp;我已閱讀並同意訂位規則
+                            </label>
+                            <button class="btn next" type="submit" id="btnOK" name="btnOK" disabled="disabled">下一步</button>
+        
+                        </div>
+                    </div>
+                </form>
+
+
+        </section>
+
+    </div>
+
+    <!-- CONTENT END col-lg-8 -->
+
+
+    </section>
+
+    
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+
+    <!-- Footer Start -->
+    <footer class="col-lg-12 p-0 justify-content-center">
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer
+                    Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright
+                    © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        //判斷是否有勾選 我同意條款
+        function disable() {
+            document.getElementById("btnOK").disabled = true
+        }
+
+        function enable() {
+            document.getElementById("btnOK").disabled = false
+        }
+    </script>
+</body>
+
+</html>

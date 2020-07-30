@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.deerNav {
+    height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.deerNav a {
+    color: var(--pColor) !important;
+}

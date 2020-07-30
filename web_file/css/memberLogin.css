@@ -1,0 +1,92 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    @import"fontstyle.css";
+    * {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    body {
+        /* The image used */
+        background-image: url("/image/member/tents-lawn_5219-8020.jpg");
+        /* Set a specific height */
+        min-height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .card {
+        border-radius: 25px;
+        margin-top: 80px;
+    }
+    
+    .card h3 {
+        color: var(--tColor);
+    }
+    
+    .cardInput {
+        color: var(--tColor);
+        font-size: var(--text_size);
+        background-color: var(--inputColor);
+        height: 42px;
+        border: none;
+        outline: none;
+    }
+    
+    .loginBtn {
+        color: white;
+        border: 1px solid var(--sColor);
+        background-color: var(--sColor);
+        border-radius: 0px !important;
+        font-size: 20px;
+    }
+    
+    .loginBtn:hover {
+        color: white;
+        border: 1px solid var(--sdColor);
+        background-color: var(--sdColor);
+    }
+    
+    .signupBtn {
+        color: var(--sColor) !important;
+        border: 1px solid var(--sColor);
+        border-radius: 0px !important;
+        font-size: 20px;
+    }
+    
+    .signupBtn:hover {
+        color: white !important;
+        background-color: var(--sdColor);
+        border: 1px solid var(--sdColor);
+    }
+    
+    .forgotBtn {
+        color: var(--tColor);
+        font-size: var(--text_size);
+        margin-left: 40px;
+    }
+    
+    .forgotBtn a {
+        color: var(--sColor) !important;
+        font-size: var(--text_size) !important;
+        margin-right: 40px;
+    }
+    
+    .forgotBtn a:hover {
+        color: var(--sdColor)!important;
+    }
+    
+    .deerSignup {
+        color: var(--tColor);
+        font-size: var(--text_size);
+    }
+    
+    .deerSignup a {
+        color: var(--sColor);
+        font-size: var(--text_size) !important;
+    }
+    
+    .deerSignup a:hover {
+        color: var(--sdColor);
+    }

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿營|Deer Camping</title>
+
+    <!-- bootstrap/js -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/bootstrap/jquery.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f167260e46.js" crossorigin="anonymous"></script>
+    <!-- 訂單modal -->
+    <script src="js/member.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/navbarOwnerLogin.css">
+    <link rel="stylesheet" href="/css/footerOwner.css">
+    <link rel="stylesheet" href="/css/owner.css">
+    <link rel="stylesheet" href="/css/area.css">
+    <link rel="stylesheet" href="/css/deercard_areaU.css">
+
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+
+        <nav class="deerNav navbar fixed-top navbar-expand-sm shadow px-5">
+
+
+            <a class="navbar-brand" href="#">Deer Camping</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="index.html">回首頁</a>
+                    </li>
+
+                    <li class="mr-3">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">歡迎回來，張揚揚</a>
+                    </li>
+
+                    <li class="">
+                        <img src="/image/member/personal01.png" alt="">
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <!-- 營主後台-->
+    <div class="ownerPage container-fluid px-0">
+        <div class="row justify-content-center">
+
+
+            <!-- （左區）營主選單-->
+            <div class="leftSection row d-flex flex-column col-md-3 col-sm-12 text-center mr-0">
+
+                <h3 class="my-5">營主管理系統</h3>
+                <!-- 選項-->
+                <div class="nav flex-column nav-pills pb-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-deerOrder-tab" data-toggle="pill" href="#v-pills-deerOrder" role="tab" aria-controls="v-pills-deerOrder" aria-selected="true"><i class="far fa-calendar-alt pr-2"></i>訂單管理</a>
+                    <a class="nav-link" id="v-pills-deerCamp-tab" data-toggle="pill" href="#v-pills-deerCamp" role="tab" aria-controls="v-pills-deerCamp" aria-selected="false"><i class="fas fa-campground pr-2"></i>營區管理</a>
+                    <a class="nav-link" id="v-pills-deerArea-tab" data-toggle="pill" href="#v-pills-deerArea" role="tab" aria-controls="v-pills-deerArea" aria-selected="false"><i class="fas fa-map-marker-alt pr-2"></i>區域管理</a>
+                    <a class="nav-link" id="v-pills-deerOwnerinfo-tab" data-toggle="pill" href="#v-pills-deerOwnerinfo" role="tab" aria-controls="v-pills-deerOwnerinfo" aria-selected="false"><i class="fas fa-user pr-2"></i>營主資料</a>
+                </div>
+
+            </div>
+
+
+            <!-- （右區）會員主頁內容-->
+            <div class="rightSection row d-flex flex-column col-md-9 col-sm-12">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <!--01_訂單管理頁-->
+                    <div class="tab-pane fade show active" id="v-pills-deerOrder" role="tabpanel" aria-labelledby="v-pills-deerOrder-tab">
+                        <!-- navbar-->
+                        <nav class="mt-5">
+                            <div class="nav nav-tabs mx-3" id="deerOrderNav" role="tablist">
+                                <a class="nav-item nav-link active" id="deerOrder-tab" data-toggle="tab" href="#nav-deerOrder" role="tab" aria-controls="deerOrder" aria-selected="true">所有訂單</a>
+                                <a class="nav-item nav-link" id="orderCheckin-tab" data-toggle="tab" href="#nav-orderCheckin" role="tab" aria-controls="orderCheckin" aria-selected="false">等待入住</a>
+                                <a class="nav-item nav-link" id="orderDone-tab" data-toggle="tab" href="#nav-orderDone" role="tab" aria-controls="orderDone" aria-selected="false">已入住</a>
+                                <a class="nav-item nav-link" id="orderCancel-tab" data-toggle="tab" href="#nav-orderCancel" role="tab" aria-controls="orderCancel" aria-selected="false">已取消</a>
+                            </div>
+                        </nav>
+
+                        <!-- 訂單內容-->
+                        <div class="tab-content px-5" id="deerOrderContent">
+
+                            <!--01_所有訂單-->
+                            <div class="tab-pane fade show active" id="nav-deerOrder" role="tabpanel" aria-labelledby="nav-deerOrder-tab">
+
+                                <!-- 等待入住訂單01 -->
+                                <div class="deerOrder card row col-12 my-4 ml-0">
+                                    <!-- 訂單營區照片 -->
+                                    <div class="col-4">
+                                        <img src="image/member/tents-lawn_5219-8020.jpg" alt="">
+                                    </div>
+
+                                    <!-- 訂單資訊 -->
+                                    <div class="orderInfo col-8 pr-4">
+                                        <div class="mt-4 mb-1">
+                                            <span class="pr-2">訂單編號</span><span>000100</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <span>A區---4帳</span><span class="stateCheckin badge badge-pill mt-1 px-2">等待入住</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span>20/08/22 - 20/08/23</span><a href="" class="check" data-toggle="modal" data-target="#moreInfo">查看詳情<i class="fas fa-chevron-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 已入住訂單01 -->
+                                <div class="deerOrder card row col-12 my-4 ml-0">
+                                    <!-- 訂單營區照片 -->
+                                    <div class="col-4">
+                                        <img src="image/member/tents-lawn_5219-8020.jpg" alt="">
+                                    </div>
+
+                                    <!-- 訂單資訊 -->
+                                    <div class="orderInfo col-8 pr-4">
+                                        <div class="mt-4 mb-1">
+                                            <span class="pr-2">訂單編號</span><span>000100</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <span>A區---4帳</span><span class="stateDone badge badge-pill mt-1 px-2">已入住</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span>20/08/22 - 20/08/23</span><a href="" class="check">查看詳情<i class="fas fa-chevron-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 已取消訂單01 -->
+                                <div class="deerOrder card row col-12 my-4 ml-0">
+                                    <!-- 訂單營區照片 -->
+                                    <div class="col-4">
+                                        <img src="image/member/tents-lawn_5219-8020.jpg" alt="">
+                                    </div>
+
+                                    <!-- 訂單資訊 -->
+                                    <div class="orderInfo col-8 pr-4">
+                                        <div class="mt-4 mb-1">
+                                            <span class="pr-2">訂單編號</span><span>000100</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <span>A區---4帳</span><span class="stateCancel badge badge-pill mt-1 px-2">已取消</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span>20/08/22 - 20/08/23</span><a href="" class="check">查看詳情<i class="fas fa-chevron-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!--02_等待入住訂單-->
+                            <div class="tab-pane fade" id="nav-orderCheckin" role="tabpanel" aria-labelledby="nav-orderCheckin-tab">
+                                <!-- 訂單01 -->
+                                <div class="deerOrder card row col-12 my-4 ml-0">
+                                    <!-- 訂單營區照片 -->
+                                    <div class="col-4">
+                                        <img src="image/member/tents-lawn_5219-8020.jpg" alt="">
+                                    </div>
+
+                                    <!-- 訂單資訊 -->
+                                    <div class="orderInfo col-8 pr-4">
+                                        <div class="mt-4 mb-1">
+                                            <span class="pr-2">訂單編號</span><span>000100</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <span>A區---4帳</span><span class="stateCheckin badge badge-pill mt-1 px-2">等待入住</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span>20/08/22 - 20/08/23</span><a href="" class="check">查看詳情<i class="fas fa-chevron-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--03_已入住訂單-->
+                            <div class="tab-pane fade" id="nav-orderDone" role="tabpanel" aria-labelledby="nav-orderDone-tab">
+                                <!-- 訂單01 -->
+                                <div class="deerOrder card row col-12 my-4 ml-0">
+                                    <!-- 訂單營區照片 -->
+                                    <div class="col-4">
+                                        <img src="image/member/tents-lawn_5219-8020.jpg" alt="">
+                                    </div>
+
+                                    <!-- 訂單資訊 -->
+                                    <div class="orderInfo col-8 pr-4">
+                                        <div class="mt-4 mb-1">
+                                            <span class="pr-2">訂單編號</span><span>000100</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <span>A區---4帳</span><span class="stateDone badge badge-pill mt-1 px-2">已入住</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span>20/08/22 - 20/08/23</span><a href="" class="check">查看詳情<i class="fas fa-chevron-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--04_已取消訂單-->
+                            <div class="tab-pane fade" id="nav-orderCancel" role="tabpanel" aria-labelledby="nav-orderDone-tab">
+                                <!-- 訂單01 -->
+                                <div class="deerOrder card row col-12 my-4 ml-0">
+                                    <!-- 訂單營區照片 -->
+                                    <div class="col-4">
+                                        <img src="image/member/tents-lawn_5219-8020.jpg" alt="">
+                                    </div>
+
+                                    <!-- 訂單資訊 -->
+                                    <div class="orderInfo col-8 pr-4">
+                                        <div class="mt-4 mb-1">
+                                            <span class="pr-2">訂單編號</span><span>000100</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pb-2">
+                                            <span>A區---4帳</span><span class="stateCancel badge badge-pill mt-1 px-2">已取消</span>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span>20/08/22 - 20/08/23</span><a href="" class="check">查看詳情<i class="fas fa-chevron-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 查看詳情modal -->
+                        <div class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <form class="card shadow py-2">
+                                        <div class="d-flex justify-content-center pt-5 pb-3">
+                                            <h3>訂單編號 00000100</h3>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--02_營區管理頁-->
+                    <div class="tab-pane fade px-4 py-5" id="v-pills-deerCamp" role="tabpanel" aria-labelledby="v-pills-deerCamp-tab">
+
+                        <form action="" class="row col-lg-10 col-sm-12">
+
+                            <!--上傳營區照片-->
+                            <div class="row d-flex justify-content-end col-12 m-0 p-0 mt-4 pl-4">
+                                <canvas id="" height="100" class="col-lg-11 col-sm-12"></canvas>
+                            </div>
+
+                            <div class="row d-flex justify-content-end col-12 m-0 p-0 mt-4 pl-4">
+                                <button type="submit" form="" value="Submit" id="" class="col-lg-3 col-sm-12 btn btn-lg">上傳營區照片</button>
+                            </div>
+
+                            <!--營區名稱-->
+                            <div class="row col-12 m-0 mt-4 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">營區名稱</label>
+                                <input type="text" class="col-9" id="">
+                            </div>
+
+                            <!--營區地址-->
+                            <div class="row col-12 m-0 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">營區地址</label>
+                                <input type="text" class="col-9" id="name">
+                            </div>
+
+                            <!--營區區域-->
+                            <div class="row col-12 m-0 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">營區區域</label>
+                                <select id="" class="col-9">
+                                    <option value="北部">北部</option>
+                                    <option value="中部">中部</option>
+                                    <option value="南部">南部</option>
+                                    <option value="東部">東部</option>
+                                </select>
+                            </div>
+
+                            <!--聯絡電話-->
+                            <div class="row col-12 m-0 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">聯絡電話</label>
+                                <input type="text" class="col-9" id="name">
+                            </div>
+
+                            <!--營區標題-->
+                            <div class="row col-12 m-0 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">營區標題</label>
+                                <input type="text" class="col-9" id="name">
+                            </div>
+
+                            <!--營區描述-->
+                            <div class="row col-12 m-0 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">營區描述</label>
+                                <textarea name="" id="" rows="4" class="col-9"></textarea>
+                            </div>
+
+                            <!--訂位須知-->
+                            <div class="row col-12 m-0 mb-5 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">訂位須知</label>
+                                <textarea name="" id="" rows="4" class="col-9"></textarea>
+                            </div>
+
+                            <!--營區主題-->
+                            <div class="row col-12 m-0 mb-4 p-0">
+                                <label for="" class="d-flex justify-content-end col-3">營區主題</label>
+                                <div class="col-9 m-0 p-0">
+                                    <span class="pr-4"><input type="radio" id="1" name="露營" value="" class="mr-1"><label for="1">清涼玩水露營</label></span>
+                                    <span class="pr-4"><input type="radio" id="2" name="露營" value="" class="mr-1"><label for="2">親子同樂露營</label></span>
+                                    <span class="pr-4"><input type="radio" id="3" name="露營" value="" class="mr-1"><label for="3">親手友善露營</label></span>
+                                    <span class="pr-4"><input type="radio" id="4" name="露營" value="" class="mr-1"><label for="4">特色文青露營</label></span>
+                                </div>
+
+                            </div>
+
+                            <!--營區選項-->
+                            <div class="row col-12 m-0 mb-5 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">熱門選項</label>
+                                <div class="col-9 m-0 p-0 pt-2">
+                                    <span class="pr-2"><input type="checkbox" id="1" name="熱門" value="" class="mr-1"><label for="1">免搭帳輕露營</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="2" name="熱門" value="" class="mr-1"><label for="2">裝備出租</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="3" name="熱門" value="" class="mr-1"><label for="3">可停露營拖車</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="4" name="熱門" value="" class="mr-1"><label for="4">租帳篷直送</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="5" name="熱門" value="" class="mr-1"><label for="5">旅遊基地/景點</label></span><br>
+                                    <span class="pr-2"><input type="checkbox" id="6" name="熱門" value="" class="mr-1"><label for="6">雲海</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="7" name="熱門" value="" class="mr-1"><label for="7">夜景</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="8" name="熱門" value="" class="mr-1"><label for="8">近溪流</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="9" name="熱門" value="" class="mr-1"><label for="9">近海邊</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="10" name="熱門" value="" class="mr-1"><label for="10">釣魚</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="11" name="熱門" value="" class="mr-1"><label for="11">有雨棚</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="12" name="熱門" value="" class="mr-1"><label for="12">團陸大草皮</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="13" name="熱門" value="" class="mr-1"><label for="13">小包區</label></span><br>
+                                    <span class="pr-2"><input type="checkbox" id="14" name="熱門" value="" class="mr-1"><label for="14">兒童樂園區</label></span>
+                                    <span class="pr-2"><input type="checkbox" id="15" name="熱門" value="" class="mr-1"><label for="15">少帳包場</label></span>
+                                </div>
+                            </div>
+
+                            <!--營區設備-->
+                            <div class="equipment row col-12 m-0 mb-3 p-0">
+                                <label for="" class="d-flex justify-content-end col-3 pt-2">營區設備</label>
+                                <div class="col-9 m-0 p-0 pt-2">
+                                    <span class="pr-4"><label for="1"><i class="fas fa-temperature-low"></i>冰箱</label><input type="checkbox" id="1" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="2"><i class="fas fa-swimming-pool"></i>玩水</label><input type="checkbox" id="2" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="3"><i class="fas fa-toilet-paper"></i>廁所</label><input type="checkbox" id="3" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="4"><i class="fas fa-parking"></i>停車</label><input type="checkbox" id="4" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="5"><i class="fas fa-wifi"></i>附Wifi</label><input type="checkbox" id="5" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="6"><i class="fas fa-mountain"></i>依山</label><input type="checkbox" id="6" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="7"><i class="fas fa-plug"></i>有插座</label><input type="checkbox" id="7" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="8"><i class="fas fa-shower"></i>淋浴</label><input type="checkbox" id="8" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="9"><i class="fas fa-dog"></i>可帶寵物</label><input type="checkbox" id="9" name="設備" value="" class="mr-1 ml-1"></span>
+                                    <span class="pr-4"><label for="10"><i class="fas fa-faucet"></i>洗手台</label><input type="checkbox" id="10" name="設備" value="" class="mr-1 ml-1"></span>
+                                </div>
+                            </div>
+
+                            <!--新增上傳-->
+                            <div class="row d-flex justify-content-end col-lg-12 col-sm-12 m-0 p-0 my-5">
+                                <button type="submit" form="" value="Submit" id="" class="col-lg-10 col-sm-12 btn btn-lg ml-4">新增上傳</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <!--03_新增區域頁-->
+                    <div class="tab-pane fade px-4 py-5" id="v-pills-deerArea" role="tabpanel" aria-labelledby="v-pills-deerArea-tab">
+
+                        <form action="" class="row flex-row col-lg-6 col-sm-12 m-0 px-3">
+                            <div class="row d-flex flex-row justify-content-end mb-3 col-sm-12 m-0 p-0">
+                                <!-- 看要不要用canvas擷取出圓圖 -->
+                                <canvas id="" height="175" width="175" class="col-5 p-0 mb-3"></canvas>
+                                <canvas id="" height="175" width="175" class="col-5 p-0 mb-3 ml-3"></canvas>
+                                <canvas id="" height="175" width="175" class="col-5 p-0 mb-3"></canvas>
+                                <button type="file" class="uploadBtn col-5 p-0 mb-3 ml-3" name="" accept="image/*" id=""><i class="fas fa-plus fa-lg"></i><br>上傳區域照片</button><span id="fileAddress"></span>
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0 mt-4">
+                                <label for="campArea" class="col-3 d-flex justify-content-end pt-2">區域名稱</label>
+                                <input type="text" class="col-9" id="campArea">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="areaType" class="col-3 d-flex justify-content-end pt-2">型態</label>
+                                <input type="text" class="col-9" id="areaType">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="areaSize" class="col-3 d-flex justify-content-end pt-2">尺寸</label>
+                                <input type="text" class="col-9" id="areaSize">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="tentQty" class="col-3 d-flex justify-content-end pt-2">數量</label>
+                                <select id="tentQty" class="col-9">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="1">3</option>
+                                <option value="2">4</option>
+                            </select>
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="tentPrice" class="col-3 d-flex justify-content-end pt-2">價錢</label>
+                                <input type="text" class="col-9" id="tentPrice">
+                            </div>
+
+                        </form>
+
+                        <div class="row flex-row justify-content-between col-lg-6 col-sm-12 m-0 p-0 mt-4">
+                            <div class="col-6 pt-4"><button class="clearBtn btn btn-lg col-12" id="">清除</button></div>
+                            <div class="col-6 pt-4"><button class="updateBtn btn btn-lg col-12" id="">新增</button></div>
+                        </div>
+
+                    </div>
+
+
+                    <!--04_營主資料頁-->
+                    <div class="deerMember tab-pane fade px-2 py-5" id="v-pills-deerOwnerinfo" role="tabpanel" aria-labelledby="v-pills-deerOwnerinfo-tab">
+
+                        <form action="" class="row flex-row col-lg-6 col-sm-12 m-0 px-3">
+                            <div class="row d-flex justify-content-end mb-3 col-sm-12 m-0 p-0">
+                                <!-- 看要不要用canvas擷取出圓圖 -->
+                                <canvas id="" height="175" width="175" class="col-6 p-0"></canvas>
+                                <button type="file" class="uploadBtn btn btn-lg col-3 pl-3 align-self-end" name="myfile" accept="image/*" id="">上傳頭像</button><span id="fileAddress"></span>
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0 mt-4">
+                                <label for="" class="col-3 d-flex justify-content-end pt-2">姓名</label>
+                                <input type="text" class="col-9" id="name">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="gender" class="col-3 d-flex justify-content-end pt-2">性別</label>
+                                <select id="gender" class="col-9">
+                                    <option value="女生">女生</option>
+                                    <option value="男生">男生</option>
+                                </select>
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="" class="col-3 d-flex justify-content-end pt-2">電子信箱</label>
+                                <input type="text" class="col-9" id="eMail">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="" class="col-3 d-flex justify-content-end pt-2">手機</label>
+                                <input type="text" class="col-9" id="phone">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="" class="col-3 d-flex justify-content-end pt-2">密碼</label>
+                                <input type="text" class="col-9" id="pwd">
+                            </div>
+
+                            <div class="row d-flex flex-row mb-3 col-sm-12 m-0 p-0">
+                                <label for="" class="col-3 d-flex justify-content-end pt-2">密碼確認</label>
+                                <input type="text" class="col-9" id="pwdconfirm">
+                            </div>
+
+                        </form>
+
+                        <div class="row flex-row justify-content-between col-lg-6 col-sm-12 m-0 p-0 mt-4">
+                            <div class="col-6 pt-4"><button class="clearBtn btn btn-lg col-12" id="">清除</button></div>
+                            <div class="col-6 pt-4"><button class="updateBtn btn btn-lg col-12" id="">修改</button></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- footer-->
+    <footer>
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

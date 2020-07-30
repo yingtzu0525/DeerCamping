@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿營|Deer Camping</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/theme.css">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5">
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Main Content Start -->
+    <div class="row justify-content-center no-gutters">
+        <!-- Landing Page 80Vh col-lg-10 -->
+        <section class="col-lg-12 d-flex  justify-content-center" id="landingPage">
+            <img class="imgArea img-fluid" src="./image/hero_img_02.jpg" alt="">
+
+            <div class="col-lg-10" id="selector">
+                <form action="" method="post">
+                    <!-- 下拉選單 -->
+                    <!-- 地區 -->
+                    <div class="btn-group mx-1">
+                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mx-2 fas fa-map-marker-alt"></i>地區
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">北部地區</a>
+                            <a class="dropdown-item" href="#">中部地區</a>
+                            <a class="dropdown-item" href="#">南部地區</a>
+                            <a class="dropdown-item" href="#">東部地區</a>
+                        </div>
+                    </div>
+                    <!-- 日期 -->
+                    <div class="btn-group  mx-1">
+                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mx-2 far fa-calendar-alt"></i></i>日期
+                        </button>
+                    </div>
+                    <!-- 帳數 -->
+                    <div class="btn-group  mx-1">
+                        <label for="tentQty">
+                            <!-- <i class="mx-2 far fa-calendar-alt"></i></i>帳數 -->
+                        </label>
+                        <input type="number" class="text-left text-white btn selectBtn" name="tentQty" id="tentQty">
+                    </div>
+                    <!-- 送出 -->
+                    <div class="btn-group  mx-1">
+                        <button type="button" class="text-center btn  checkBtn ">立即搜尋</button>
+                    </div>
+                </form>
+            </div>
+            <!-- SubSelector -->
+            <div class="col-lg-10 border border-dark" id="subSelector">
+                縣市
+                熱門選項
+                星級評分
+            </div>
+        </section>
+
+
+        <!-- Themes icon  -->
+        <section class="col-lg-10 row justify-content-between" id="themeArea">
+            <div class="col-12 d-flex">
+                <div class="themeIcon theme_1 align-items-center m-auto"></div>
+                <div class="themeIcon theme_2 align-items-center m-auto"></div>
+                <div class="themeIcon theme_3 align-items-center m-auto"></div>
+                <div class="themeIcon theme_4 align-items-center m-auto"></div>
+            </div>
+        </section>
+
+        <!-- Theme Body Start -->
+        <section class="col-lg-10">
+            <!-- 清涼玩水 -->
+            <div class="themeGroup">
+                <h1 class="themeTitle">清涼玩水</h1>
+                <p class="themeText mb-4">天氣正熱，露營除了玩水，還是玩水！特別準備戲水露營區懶人包！</p>
+            </div>
+            <!-- CARD GROUP -->
+            <div class="container-fluid pb-4">
+                <div class="deerCard1 row justify-content-center">
+                    <div class="row flex-row col-lg-12 col-sm-12">
+
+                        <!-- 01_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 02_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 03_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn viewBtn">Read More</button>
+                </div>
+            </div>
+
+            <!-- 親子同遊  -->
+            <div class="themeGroup">
+                <h1 class="themeTitle">親子同遊</h1>
+                <p class="themeText mb-4">精選設有沙坑、溜滑梯、戲水池等兒童親子設施，或不時舉辦親子 DIY、生態導覽與部落文化活動等親子露營區</p>
+            </div>
+            <!-- CARD GROUP -->
+            <div class="container-fluid pb-4">
+                <div class="deerCard1 row justify-content-center">
+                    <div class="row flex-row col-lg-12 col-sm-12">
+
+                        <!-- 01_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 02_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 03_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn viewBtn">Read More</button>
+                </div>
+            </div>
+
+            <!-- 新手友善  -->
+            <div class="themeGroup">
+                <h1 class="themeTitle">新手友善</h1>
+                <p class="themeText mb-4">精選新手推薦露營區，精選交通便利、位處近郊及提供裝備租賃的新手露營區</p>
+            </div>
+            <!-- CARD GROUP -->
+            <div class="container-fluid pb-4">
+                <div class="deerCard1 row justify-content-center">
+                    <div class="row flex-row col-lg-12 col-sm-12">
+
+                        <!-- 01_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 02_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 03_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn viewBtn">Read More</button>
+                </div>
+            </div>
+
+            <!-- 文青特色 -->
+            <div class="themeGroup">
+                <h1 class="themeTitle">文青特色</h1>
+                <p class="themeText mb-4">只要帶著行李箱立馬體驗豪華露營，睡獨立筒彈簧雙人床，享用全套露營設備。</p>
+            </div>
+            <!-- CARD GROUP -->
+            <div class="container-fluid pb-4">
+                <div class="deerCard1 row justify-content-center">
+                    <div class="row flex-row col-lg-12 col-sm-12">
+
+                        <!-- 01_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 02_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!-- 03_營區 -->
+                        <div class="col-lg-4 col-sm-12 py-2">
+                            <div class="card shadow d-flex justify-content-between">
+                                <!-- 營區照片 -->
+                                <img src="./image/campPic/temp_01.jpg" alt="">
+
+                                <!-- 營區名字/地區 -->
+                                <div class="d-flex justify-content-between ml-4 pt-4 pb-1 place">
+                                    <span>秘密基地露營區</span>
+                                    <span class="pt-1 pr-4"><i class="fas fa-map-marker-alt pr-2"></i>縣市</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between px-4 py-4">
+                                    <!-- 營區熱門標籤-->
+                                    <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+                                    <!--按鈕查看-->
+                                    <a href="" class="check">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                                </div>
+
+                                <!--按鈕下訂-->
+                                <button class="btn btn-lg text-white" type="submit">BOOK NOW</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn viewBtn">Read More</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- theme body End -->
+    
+    </div>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer class="col-lg-12 p-0 justify-content-center">
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer
+                    Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright
+                    © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+
+
+
+
+
+    </footer>
+</body>
+
+</html>

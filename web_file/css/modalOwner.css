@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.modal-content form>div:nth-child(1) {
+    color: var(--tColor);
+    border-bottom: 3px solid var(--pColor);
+}
+
+.modal-content form>div:nth-child(2) {
+    color: var(--tColor);
+}
+
+.modal-content form div:nth-child(3) {
+    color: var(--tColor);
+    font-size: var(--text_size);
+    padding-right: 30px;
+}
+
+.modal-content form li div:nth-child(2) {
+    background-color: var(--inputColor);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dismissBtn {
+    color: white;
+    height: 50px;
+    font-size: var(--btnSize);
+    border: none;
+    background-color: var(--plColor);
+    padding-left: 155px;
+    padding-right: 155px;
+    outline: none
+}
+
+.dismissBtn:hover {
+    background-color: var(--pColor);
+}
+
+.dismissBtn:focus {
+    outline: none;
+}

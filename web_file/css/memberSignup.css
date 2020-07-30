@@ -1,0 +1,75 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    @import"fontstyle.css";
+    * {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    body {
+        /* The image used */
+        background-image: url("/image/member/tents-lawn_5219-8020.jpg");
+        /* Set a specific height */
+        min-height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .cardInput .card {
+        border-radius: 25px;
+        margin-top: 80px;
+    }
+    
+    .cardInput h3 {
+        color: var(--tColor);
+    }
+    
+    .cardInput input {
+        background-color: var(--inputColor);
+        border: none !important;
+        color: var(--tColor);
+        font-size: 1rem;
+        height: 42px;
+        outline: none;
+    }
+    
+    .cardInput select {
+        background-color: var(--inputColor);
+        border: none !important;
+        color: var(--tColor);
+        font-size: 1rem;
+        height: 42px;
+        outline: none;
+    }
+    
+    .Note span {
+        color: var(--sColor);
+    }
+    
+    .signupBtn {
+        color: white !important;
+        border: 1px solid var(--sColor);
+        background-color: var(--sColor);
+        border-radius: 0px !important;
+        font-size: 20px;
+    }
+    
+    .signupBtn:hover {
+        border: 1px solid var(--sdColor);
+        background-color: var(--sdColor);
+    }
+    
+    .deerSignin {
+        color: var(--tColor);
+        font-size: var(--text_size);
+    }
+    
+    .deerSignin a {
+        color: var(--sColor);
+        font-size: var(--text_size) !important;
+    }
+    
+    .deerSignin a:hover {
+        color: var(--sdColor);
+    }

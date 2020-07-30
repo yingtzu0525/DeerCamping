@@ -1,0 +1,232 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    @import"fontstyle.css";
+    @import"cardanimation.css";
+    * {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    .memberPage {
+        margin-top: 80px;
+    }
+    
+    .leftSection {
+        padding: 0px !important;
+        width: 600px;
+        height: 100%;
+    }
+    
+    .memberPage {
+        margin-top: 80px;
+        position: relative;
+    }
+    
+    .member {
+        color: var(--tColor);
+    }
+    
+    .member img {
+        height: 175px;
+        width: 175px;
+        clip-path: circle(50% at 50% 50%);
+    }
+    
+    .nav-link {
+        color: var(--plColor) !important;
+        height: 50px;
+        border-radius: 0px !important;
+    }
+    
+    .nav-link:hover {
+        color: var(--pColor) !important;
+    }
+    
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: white !important;
+        background-color: var(--pColor) !important;
+    }
+    
+    .rightSection {
+        width: 1000px;
+        background-color: var(--bglColor);
+        background-image: url(/image/member/memberBg3.png);
+        background-size: 1300px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom right;
+        padding-bottom: 200px;
+    }
+    
+    .rightSection h3 {
+        color: var(--tColor);
+    }
+    
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link:focus {
+        border-color: var(--tColor) var(--tColor) var(--tColor)!important;
+        border-radius: 8px 8px 0px 0px!important;
+    }
+    
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        color: var(--sColor) !important;
+        background-color: transparent !important;
+        border-color: var(--tColor) var(--tColor) var(--bglColor)!important;
+        border-radius: 8px 8px 0px 0px!important;
+    }
+    
+    .nav-tabs {
+        border-bottom: 1px solid var(--tColor) !important;
+    }
+    
+    .deerOrder {
+        height: 150px;
+        border-radius: 0px;
+        padding: 0px 0px !important;
+        border: none;
+    }
+    
+    .deerOrder:hover {
+        height: 150px;
+        border-radius: 0px;
+        padding: 0px 0px !important;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        animation: cardup 0.5s ease forwards;
+    }
+    
+    .deerOrder div:nth-child(1) {
+        padding: 0px 0px !important;
+    }
+    
+    .deerOrder div img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        border-left: 10px solid var(--sColor) !important;
+    }
+    
+    .orderinfo div:nth-child(1) {
+        color: var(--tColor);
+        font-size: var(--text_size);
+        font-weight: var(--text_weight);
+    }
+    
+    .orderinfo div:nth-child(2) {
+        color: var(--plColor);
+        font-size: var(--article_size);
+        font-weight: var(--article_weight);
+        border-bottom: 1px solid var(--plColor);
+    }
+    
+    .badge-pill {
+        color: white;
+        font-size: var(--text_size);
+        font-weight: var(--text_weight);
+        height: 30px;
+        padding-top: 6px;
+    }
+    
+    .stateCheckin {
+        background-color: var(--sdColor);
+    }
+    
+    .stateDone {
+        background-color: var(--pColor);
+    }
+    
+    .stateCancel {
+        background-color: var(--tColor);
+    }
+    
+    .orderinfo div:nth-child(3) {
+        color: var(--plColor);
+        font-size: var(--text_size);
+        font-weight: var(--text_weight);
+    }
+    
+    .orderinfo div:nth-child(3) a {
+        color: var(--pColor);
+        font-size: var(--text_size);
+        font-weight: var(--text_weight);
+    }
+    
+    .orderinfo div:nth-child(3) a:hover {
+        color: var(--sColor);
+    }
+    
+    .deerdiarybtn {
+        color: white;
+        font-size: var(--btnSize);
+        background-color: var(--sColor);
+        border-radius: 0px;
+    }
+    
+    .deerdiarybtn:hover {
+        color: white;
+        background-color: var(--sdColor);
+    }
+    
+    #v-pills-deerMemberinfo img {
+        border-radius: 130px;
+    }
+    
+    #v-pills-deerMemberinfo label {
+        color: var(--tColor);
+    }
+    
+    #v-pills-deerMemberinfo input {
+        color: var(--tColor);
+        border: none;
+        outline: none;
+    }
+    
+    #v-pills-deerMemberinfo select {
+        color: var(--tColor);
+        border: none;
+        outline: none;
+    }
+    
+    #v-pills-deerMemberinfo .uploadBtn {
+        color: white;
+        font-size: var(--btnSize);
+        background-color: var(--plColor);
+        border-radius: 0px;
+    }
+    
+    #v-pills-deerMemberinfo .uploadBtn:hover {
+        background-color: var(--pColor);
+    }
+    
+    #v-pills-deerMemberinfo .updateBtn {
+        padding-left: -10px;
+        color: white;
+        font-size: var(--btnSize);
+        border: 1px solid var(--sColor);
+        background-color: var(--sColor);
+        height: 48px;
+    }
+    
+    #v-pills-deerMemberinfo .clearBtn {
+        padding-left: -10px;
+        color: var(--sColor);
+        font-size: var(--btnSize);
+        border: 1px solid var(--sColor);
+        background-color: transparent;
+        ;
+        height: 50px;
+    }
+    
+    #v-pills-deerMemberinfo .updateBtn:hover {
+        color: white;
+        background-color: var(--sdColor);
+        border: 1px solid var(--sdColor);
+    }
+    
+    #v-pills-deerMemberinfo .clearBtn:hover {
+        color: white;
+        background-color: var(--sColor);
+    }
+    
+    #v-pills-deerMemberinfo canvas {
+        background-color: var(--tagColor);
+    }

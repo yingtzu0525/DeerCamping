@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿營|Deer Camping</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/campSite.css">
+    <link rel="stylesheet" href="css/tabPage.css">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        var cot = 0;
+
+        function nex() {
+            if (cot <= 2) {
+                $('.campAreapicsdedetail img').eq(cot).animate({
+                    'margin-left': '-306px'
+                }, 500);
+                cot++;
+            }
+        }
+
+        function pre() {
+            if (cot > 0) {
+                cot--;
+                $('.campAreapicsdedetail img').eq(cot).animate({
+                    'margin-left': '0'
+                }, 500);
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5">
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Main Content Start -->
+    <div class="row justify-content-center no-gutters">
+        <!-- Landing Page 75Vh col-lg-10 -->
+        <section class="col-lg-12 d-flex  justify-content-center" id="landingPage">
+            <img class="imgArea img-fluid" src="./image/hero_img_03.jpg" alt="">
+
+
+        </section>
+
+
+        <!-- bread  -->
+        <section class="col-lg-10 border border-warning" id="bread">
+
+        </section>
+
+        <!-- CAMP INFO Tab Start -->
+        <section class="col-lg-12 border border-dark">
+            <!-- tab區 -->
+            <ul class="nav nav-tabs m-5">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" aria-selected="true" href="#campInfoArea">營區介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" aria-selected="false" href="#noticeArea">訂位須知</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" aria-selected="false" href="#commentArea">最新評價</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- 營區介紹 -->
+                <div class="tab-pane fade show active pt-3  " id="campInfoArea">
+                    <div class="d-flex flex-row justify-content-center mb-5 pb-5">
+
+                        <div class="col-5 text-right pt-4 mr-4">
+                            <p class="pb-4"> 鄰近李崠山古堡 眺望雲海最佳視野 </p>
+                            <p>鄰近李崠山古堡只需2分鐘，車程16分鍾立即抵達宇老觀景台舒適又明亮的住宿環境， 炊事設備齊全 適合三代同堂一起同樂！四處山景環繞居高臨下景致；雲海、日出、夕陽、星空唯我獨享！
+                            </p>
+                        </div>
+
+                        <!-- 設施介紹 -->
+                        <div class="col-4 eqpArea">
+                            <div class="row d-flex flex-row justify-content-center fa-3x py-5">
+                                <div class="col eqpFa d-flex flex-column px-3">
+                                    <i class="fas fa-mountain"></i>
+                                    <p class="text-center">依山</p>
+                                </div>
+                                <div class="col eqpFa d-flex flex-column px-3">
+                                    <i class="fas fa-wifi"></i>
+                                    <p class="text-center">附Wifi</p>
+                                </div>
+                                <div class="col eqpFa d-flex flex-column px-3">
+                                    <i class="fas fa-plug"></i>
+                                    <p class="text-center">插座</p>
+                                </div>
+                                <div class="col eqpFa d-flex flex-column px-3">
+                                    <i class="fas fa-parking"></i>
+                                    <p class="text-center">停車</p>
+                                </div>
+                                <div class="col eqpFa d-flex flex-column px-3">
+                                    <i class="fas fa-dog"></i>
+                                    <p class="text-center">可帶寵物</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 區域介紹A -->
+                    <div class="col-12 pt-5 my-5 pr-0" id="campAreainfo">
+                        <div class="d-flex pr-0 campAreainfo">
+
+                            <div class="col-3 ml-5 campAreainfodetail">
+                                <p>A區雨棚景觀區</p>
+                                <p class="price">＄1200</p>
+                                <li>型態：木棧板+碎石</li>
+                                <li>尺寸：4Mx6M</li>
+                                <li>數量：6 帳</li>
+                                <button class="mt-4" type="submit">立即預訂</button>
+                            </div>
+
+                            <div class="row col pr-0 mr-0 campAreapics">
+                                <div class="col-12 pr-0 mr-0 d-flex flex-row campAreapicsDetail" >
+                                    <img class="pr-4" src="image/hero_img_01.jpg" alt="">
+                                    <img class="pr-4" src="image/hero_img_01.jpg" alt="">
+                                    <img class="pr-4" src="image/hero_img_01.jpg" alt="">
+                                    <img class="pr-4" src="image/hero_img_01.jpg" alt="">
+                                    <img class="pr-4" src="image/hero_img_01.jpg" alt="">
+                                    <img class="pr-4" src="image/hero_img_01.jpg" alt="">
+                                </div>
+                                <div class="mygradient"></div>
+                                <div class="col d-flex flex-row fa-lg mt-2">
+                                    <div><i onclick="pre()" class="col myArrow pt-2 mx-2 fas fa-chevron-left"></i></div>
+                                    <div><i onclick="nex()" class="col myArrow pt-2 mx-2 fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 區域介紹B -->
+                    
+
+                    <!-- 區域介紹C -->
+                   
+
+                    <!-- map -->
+                    <iframe class="col mt-5 pt-5 px-0"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14590.403180527615!2d120.9586553!3d23.9037706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8198ae8dba9c7e26!2z5ouC5rC05bGx6I6K!5e0!3m2!1szh-TW!2stw!4v1595486653754!5m2!1szh-TW!2stw"
+                        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+
+                <!-- 訂位須知 -->
+                <div class="tab-pane fade" id="noticeArea">
+                    <div class="d-flex flex-row container pt-5">
+                        <div class="col-7">
+                            <div class="mb-5">
+                                <p>交通資訊</p>
+                                <p>※ 自行開車：北二高(國道3號)→下大溪交流道→員林路→康莊路(省道台7線)→北部橫貫公路→經慈湖→三民→復興→榮華水霸→下巴陵→達觀山收費站→上巴陵(山源小吃店前右轉)→中心路(往上)→『拉拉山露營‧拉拉山木村的家露營區』
+                                </p>
+                                <p>※ 大眾交通工具：正確公車時間表，請電洽中壢客運。</p>
+                                <p>請搭乘往『上巴陵站』的桃園客運或中壢客運，至上巴陵（終站）時下車。</p>
+                                <p>桃園客運　電話：03-3753711【大溪往上巴陵】</p>
+                                <p>中壢客運　電話：03-4255722【桃園往上巴陵】</p>
+                            </div>
+
+                            <div class="mb-5">
+                                <p>營地須知</p>
+                                <p>進出場時間：入營 13:00 拔營 隔日12:00</p>
+                                <p>熱水供應時間：24小時供應</p>
+                                <p>電力供應時間：24小時供應</p>
+                                <p>平假日定義：平日：星期日～星期五 (訂金100%)</p>
+                                <p class="pl-5 ml-5">假日：星期六、連假、年假 (訂金100%)</p>
+                                <p>※ 每營位限搭1睡帳、1客廳帳、1停車位(加車每台100元，因空間有限，按營主安排)。</p>
+                                <p>※ 每營位限4人入住，第5人起，酌收人頭費100元/人(入住上限6人，幼兒園以下免費)。</p>
+                                <p>※ 營帳為神殿、熊帳、怪獸帳、變形金剛、5x8大天幕者請訂2個營位。</p>
+                                <p>※ 露宿車內，營位費用以每帳計算。</p>
+                            </div>
+
+                            <div class="mb-5">
+                                <p>本營區訂單異動暨退訂比例:</p>
+                                <p>■ 依營位總金額之30%做為上述退訂比例之計算依據。</p>
+                                <p>※ 營區為戶外環境，如遇常態雨季、陣雨、強風及低溫等等自然氣候，不列入退款或延期範圍，訂位請多考量！</p>
+                                <p>※ 雨天不露營之辦法：遇雨天不露營者請勿先行訂位，建議於出遊當天，您可以接受的天氣、路況，再以電話聯繫營主訂位，以免造成雙方之間的困擾。</p>
+                                <p>(註1) 依行政院( http://www.ey.gov.tw/ )消費者保護法之【觀光旅館業與旅館業及民宿個別旅客直接訂房定型化契範本】</p>
+                                <p>(註2)
+                                    依中央氣象局全球資訊網(https://www.cwb.gov.tw/V8/C/P/Warning/FIFOWS.html)發布之警特報，以營區所在縣市位置為主。
+                                </p>
+
+                                <p>※ 14天前以延期為主，請注意，延期以一次為限！</p>
+                                <p>※ 延期注意事項：單筆訂單，限同一營區、相同數量、相同日期、不分拆訂單、不可部份延期，請於營區開放時間內完成延期換單。</p>
+                                <p>※ 14天內人為因素訂單異動，僅以退訂比例處理(以各營區規則為主)。</p>
+                                <p>※ 露營當天如遇上述之天候因素等級，可做延期處理(以各營區規則為主)。</p>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <table class="table table-bordered">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th scope="col">露營日</th>
+                                        <th scope="col">人為因素</th>
+                                        <th scope="col">天候因素</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">14天前</th>
+                                        <td>100%</td>
+                                        <td rowspan="4"> </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10-13天前</th>
+                                        <td>70%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7-9天前</th>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4-6天前</th>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2-3天前</th>
+                                        <td>30%</td>
+                                        <td>可延期或全額退費</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1天前</th>
+                                        <td>20%</td>
+                                        <td>可延期或全額退費</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">當天</th>
+                                        <td>0%</td>
+                                        <td>可延期或全額退費</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- 最新評價-->
+                <div class="tab-pane fade" id="commentArea">
+
+                    <!-- Start BawkBox Code-->
+                    <script data-sil-id="5f1fe4c17483bb00112f6c98">
+                        var loadWidget = function () {
+                            var d = document,
+                                w = window,
+                                l = window.location,
+                                p = l.protocol == "file:" ? "http://" : "//";
+                            if (!w.WS) w.WS = {};
+                            c = w.WS;
+                            var m = function (t, o) {
+                                var e = d.getElementsByTagName("script");
+                                e = e[e.length - 1];
+                                var n = d.createElement(t);
+                                if (t == "script") {
+                                    n.async = true;
+                                }
+                                for (k in o) n[k] = o[k];
+                                e.parentNode.insertBefore(n, e)
+                            };
+                            m("script", {
+                                src: p + "bawkbox.com/widget/star-rating/5f1fe4c17483bb00112f6c98?page=" + encodeURIComponent(l + ''),
+                                type: 'text/javascript'
+                            });
+                            c.load_net = m;
+                        };
+                        if (window.Squarespace) {
+                            document.addEventListener('DOMContentLoaded', loadWidget);
+                            setTimeOut(function () {
+                                document.addEventListener('DOMContentLoaded', loadWidget);
+                            }, 3000)
+                        } else {
+                            loadWidget()
+                        }
+                    </script>
+                    <div class="sil-widget-star-rating sil-widget" id="sil-widget-5f1fe4c17483bb00112f6c98"><a
+                            href="//bawkbox.com/install/star-rating">Customer Reviews</a></div>
+                    <!-- End BawkBox Code-->
+
+                </div>
+            </div>
+        </section>
+        <!-- CAMP INFO Tab End -->
+
+    </div>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer class="col-lg-12 p-0 justify-content-center">
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer
+                    Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright
+                    © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+
+
+
+
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+@import"cardanimation.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.leftSection {
+    padding: 0px !important;
+    background-color: var(--slColor);
+}
+
+.leftSection h3 {
+    color: white;
+}
+
+.ownerPage {
+    margin-top: 80px;
+}
+
+.leftSection .nav-link {
+    color: white !important;
+    height: 50px;
+    border-radius: 0px !important;
+}
+
+.leftSection .nav-link:hover {
+    color: var(--sdColor) !important;
+}
+
+.rightSection .nav-link {
+    color: var(--tColor);
+    height: 50px;
+    border-radius: 0px !important;
+}
+
+.rightSection .nav-link:hover {
+    color: var(--sdColor) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white !important;
+    background-color: var(--sColor) !important;
+}
+
+.rightSection {
+    background-color: var(--bgColor);
+    width: 1000px;
+    background-image: url(/image/member/memberBg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    padding-bottom: 200px;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border-color: var(--tColor) var(--tColor) var(--tColor)!important;
+    border-radius: 8px 8px 0px 0px!important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: var(--sdColor) !important;
+    background-color: transparent !important;
+    border-color: var(--tColor) var(--tColor) var(--bgColor)!important;
+    border-radius: 8px 8px 0px 0px!important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--tColor) !important;
+}
+
+.deerOrder {
+    height: 150px;
+    border-radius: 0px;
+    padding: 0px 0px !important;
+    border: none;
+}
+
+.deerOrder:hover {
+    height: 150px;
+    border-radius: 0px;
+    padding: 0px 0px !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    animation: cardup 0.5s ease forwards;
+}
+
+.deerOrder div:nth-child(1) {
+    padding: 0px 0px !important;
+}
+
+.deerOrder div img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-left: 10px solid var(--pColor) !important;
+}
+
+.orderInfo div:nth-child(1) {
+    color: var(--tColor);
+    font-size: var(--text_size);
+    font-weight: var(--text_weight);
+}
+
+.orderInfo div:nth-child(2) {
+    color: var(--tColor);
+    font-size: var(--article_size);
+    font-weight: var(--article_weight);
+    border-bottom: 1px solid var(--tColor);
+}
+
+.orderInfo div:nth-child(3) {
+    color: var(--tColor);
+    font-size: var(--text_size);
+    font-weight: var(--text_weight);
+}
+
+.orderInfo div:nth-child(3) a {
+    color: var(--pColor);
+    font-size: var(--text_size);
+    font-weight: var(--text_weight);
+}
+
+.orderInfo div:nth-child(3) a:hover {
+    color: var(--sdColor);
+}
+
+.badge-pill {
+    color: white;
+    font-size: var(--text_size);
+    font-weight: var(--text_weight);
+    height: 30px;
+    padding-top: 6px;
+}
+
+.stateCheckin {
+    background-color: var(--sdColor);
+}
+
+.stateDone {
+    background-color: var(--pColor);
+}
+
+.stateCancel {
+    background-color: var(--tColor);
+}
+
+.deerareabtn {
+    color: white;
+    font-size: var(--btnSize);
+    background-color: var(--sColor);
+    border-radius: 0px;
+}
+
+.deerareabtn:hover {
+    color: white;
+    background-color: var(--sdColor);
+}
+
+.deerMember canvas {
+    background-color: var(--tagColor);
+}
+
+.deerMember label {
+    color: var(--tColor);
+}
+
+.deerMember input {
+    color: var(--tColor);
+    height: 48px;
+    border: none;
+}
+
+.deerMember select {
+    color: var(--tColor);
+    height: 48px;
+    border: none;
+}
+
+.deerMember .uploadBtn {
+    color: white;
+    font-size: var(--btnSize);
+    background-color: var(--sColor);
+    height: 48px;
+    border: none;
+    border-radius: 0px;
+}
+
+.deerMember .uploadBtn:hover {
+    background-color: var(--sdColor);
+}
+
+.deerMember .updateBtn {
+    padding-left: -10px;
+    color: white;
+    font-size: var(--btnSize);
+    border: 1px solid var(--plColor);
+    background-color: var(--plColor);
+    border-radius: 0px;
+}
+
+.deerMember .updateBtn:hover {
+    color: white;
+    background-color: var(--pColor);
+    border: 1px solid var(--pColor);
+    border-radius: 0px;
+}
+
+.deerMember .clearBtn {
+    padding-left: -10px;
+    color: var(--plColor);
+    font-size: var(--btnSize);
+    border: 1px solid var(--plColor);
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.deerMember .clearBtn:hover {
+    color: white;
+    background-color: var(--pColor);
+    border: 1px solid var(--pColor);
+}
+
+#v-pills-deerCamp {
+    color: var(--tColor);
+}
+
+#v-pills-deerCamp canvas {
+    background-color: var(--tagColor);
+}
+
+#v-pills-deerCamp input {
+    color: var(--tColor);
+    border: none;
+    outline: none;
+}
+
+#v-pills-deerCamp select {
+    color: var(--tColor);
+    border: none;
+    outline: none;
+}
+
+#v-pills-deerCamp textarea {
+    color: var(--tColor);
+    border: none;
+    outline: none;
+}
+
+#v-pills-deerCamp button {
+    color: white;
+    font-size: var(--btnSize);
+    background-color: var(--plColor);
+    border-radius: 0px;
+}
+
+#v-pills-deerCamp button:hover {
+    background-color: var(--pColor);
+}
+
+.equipment i {
+    color: var(--tColor);
+    font-size: 50px;
+}

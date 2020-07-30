@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿營|Deer Camping</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/themeSearch.css">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5">
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Main Content Start -->
+    <div class="row justify-content-center no-gutters">
+        <!-- Landing Page 80Vh col-lg-10 -->
+        <section class="col-lg-12 d-flex  justify-content-center" id="landingPage">
+            <img class="imgArea img-fluid" src="./image/hero_img_02.jpg" alt="">
+
+            <div class="col-lg-10" id="selector">
+                <form action="" method="post">
+                    <!-- 下拉選單 -->
+                    <!-- 地區 -->
+                    <div class="btn-group mx-1">
+                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mx-2 fas fa-map-marker-alt"></i>地區
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">北部地區</a>
+                            <a class="dropdown-item" href="#">中部地區</a>
+                            <a class="dropdown-item" href="#">南部地區</a>
+                            <a class="dropdown-item" href="#">東部地區</a>
+                        </div>
+                    </div>
+                    <!-- 日期 -->
+                    <div class="btn-group  mx-1">
+                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mx-2 far fa-calendar-alt"></i></i>日期
+                        </button>
+                    </div>
+                    <!-- 帳數 -->
+                    <div class="btn-group  mx-1">
+                        <label for="tentQty">
+                            <!-- <i class="mx-2 far fa-calendar-alt"></i></i>帳數 -->
+                        </label>
+                        <input type="number" class="text-left text-white btn selectBtn" name="tentQty" id="tentQty">
+                    </div>
+                    <!-- 送出 -->
+                    <div class="btn-group  mx-1">
+                        <button type="button" class="text-center btn  checkBtn ">立即搜尋</button>
+                    </div>
+                </form>
+            </div>
+            <!-- SubSelector -->
+            <div class="col-lg-10 border border-dark" id="subSelector">
+                <div class="filterBar">
+                    <div class="PillDropdown ">
+                        <button class="btn" data-toggle="collapse" data-target="#fliterList" aria-expanded="true"
+                            aria-controls="#fliterList">縣市<i class="fas fa-chevron-down"></i></button>
+                        <!-- 選單下拉 -->
+                        <!-- panel  -->
+                        <!-- <aside class="MoreFilter" id="fliterList">
+                            <ul>
+                                <li>臺北市</li>
+                                <li>新北市</li>
+                                <li>基隆市</li>
+                                <li>桃園市</li>
+                                <li>新竹縣</li>
+                                <li>宜蘭縣</li>
+                            </ul> -->
+
+                        <!-- 送出選項 -->
+                        <!-- <footer class="MoreFilter_Footer">
+                                <div class="MoreFilter_Wrapper MoreFilter__Wrapper--bottom">
+                                    <button
+                                        class="btn MoreFilter__Button MoreFilter__Button--noStyle">清除篩選設定</button><button
+                                        class="btn MoreFilter__Button MoreFilter__Button--blue"><span>完成</span></button></span>
+                                </div>
+                            </footer>
+                        </aside> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- bread  -->
+        <section class="col-lg-10 border border-warning" id="bread">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- Search List Start -->
+        <section class="col-lg-10 ">
+
+
+            <!-- RWD col-lg-12 col-md-12 -->
+            <div class="card my-4">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./image/campPic/temp_01.jpg" class="card-img-top h-100 img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="card-body pr-0">
+                            <div class="wrapBox justify-content-between">
+                                <p class="card-title ">虎嘯山莊露營區</p>
+                                <span class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                </span>
+                            </div>
+                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～ 
+                                坐在虎嘯山莊的觀景台上，俯瞰超美麗的整個埔里小鎮，
+                                不管是清晨的雲海，白天的飛行傘，千變萬化的夕陽，無光害的夜晚星空，或小鎮的夜景，絕對讓你回味無窮！
+                                拿一本書吹著徐徐涼風，享受愜意又慵懶的陽光，或是和朋友或家人在草地上嬉戲玩耍，
+                                為自己充充電，帶個輕裝備就可來個遠離塵囂的浪漫時光。</p>
+                            <!--hr-->
+                            <div class="wrapBox justify-content-between" >
+                                <span class="location mt-1 "><i class="fas fa-map-marker-alt mx-2"></i>南投縣</span>
+                                <a href="" class="check  mt-1">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="btn bookBtn ">立即預定</a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+        <!-- Search List End -->
+
+    </div>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer class="col-lg-12 p-0 justify-content-center" id="bottonFooter">
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer
+                    Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright
+                    © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+
+
+
+
+
+    </footer>
+</body>
+
+</html>
