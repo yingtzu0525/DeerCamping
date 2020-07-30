@@ -1,0 +1,53 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    @import"fontstyle.css";
+    * {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    .deerCard1 .card {
+        height: 400px;
+    }
+    
+    .deerCard1 .place {
+        border-bottom: #00838F 1px solid;
+    }
+    
+    .deerCard1 .place span:nth-child(1) {
+        color: var(--pColor);
+        font-size: var(--article_size);
+        font-weight: var(--article_weight);
+    }
+    
+    .deerCard1 .place span:nth-child(2) {
+        color: var(--text_color);
+        font-size: var(--text_size);
+        font-weight: var(--text_weight);
+    }
+    
+    .deerCard1 .card img {
+        height: 210px;
+        width: 100%;
+    }
+    
+    .deerCard1 .card .check {
+        color: var(--text_color);
+        font-size: var(--text_size);
+        font-weight: var(--text_weight);
+    }
+    
+    .deerCard1 .card .badge {
+        border-radius: 50px !important;
+        padding-top: 5px;
+        background-color: var(--tagColor);
+    }
+    
+    .deerCard1 .card .check i {
+        color: var(--pColor);
+    }
+    
+    .deerCard1 .card button {
+        background-color: var(--sColor);
+        border-radius: 0px !important;
+        font-size: 20px;
+        font-weight: 400;
+    }

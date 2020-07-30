@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#searchBar {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: var(--pColor);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 200px;
+}
+
+#searchBar>div {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+}
+
+#searchBar i {
+    font-size: 20px;
+    padding-top: 8px !important;
+}
+
+#searchBar button {
+    color: white;
+    font-size: var(--btnSize);
+    height: 50px;
+    border: none;
+    background-color: var(--sColor);
+    box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+#searchBar button:hover {
+    background-color: var(--sdColor);
+    box-shadow: none;
+}
+
+#searchBar button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.searchOption {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border: white 1px solid;
+}
+
+@media screen and (max-width: 960px) {
+    .searchOption {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+#searchBar select {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+#searchBar select:focus {
+    outline: none;
+}

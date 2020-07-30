@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+@import"cardanimation.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#v-pills-deerArea {
+    color: var(--tColor);
+    font-size: var(--text_size);
+}
+
+#v-pills-deerArea canvas {
+    background-color: var(--tagColor);
+}
+
+#v-pills-deerArea .uploadBtn {
+    color: var(--plColor);
+    font-size: var(--btnSize);
+    border: 1px solid var(--plColor);
+    background-color: var(--bgColor);
+}
+
+#v-pills-deerArea .uploadBtn:hover {
+    color: white;
+    font-size: var(--btnSize);
+    border: 1px solid var(--pColor);
+    background-color: var(--pColor);
+}
+
+#v-pills-deerArea input {
+    color: var(--tColor);
+    border: none;
+    outline: none;
+}
+
+#v-pills-deerArea select {
+    border: none;
+    outline: none;
+}
+
+#v-pills-deerArea .clearBtn {
+    color: var(--plColor);
+    font-size: var(--btnSize);
+    border: 1px solid var(--plColor);
+    border-radius: 0px;
+}
+
+#v-pills-deerArea .clearBtn:hover {
+    color: white;
+    font-size: var(--btnSize);
+    border-radius: 0px;
+    border: 1px solid var(--pColor);
+    background-color: var(--pColor);
+}
+
+#v-pills-deerArea .updateBtn {
+    color: white;
+    font-size: var(--btnSize);
+    border-radius: 0px;
+    background-color: var(--plColor);
+}
+
+#v-pills-deerArea .updateBtn:hover {
+    color: white;
+    font-size: var(--btnSize);
+    border-radius: 0px;
+    border: 1px solid var(--pColor);
+    background-color: var(--pColor);
+}

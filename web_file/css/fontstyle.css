@@ -1,0 +1,37 @@
+:root {
+    --title_size: 45px;
+    --title_color: #4FB3BF;
+    --title_weight: 500;
+    --text_size: 1rem;
+    --text_color: #666666;
+    --text_weight: 400;
+    --text_height: 2rem;
+    --price_size: 30px;
+    --price_color: #C75B39;
+    --price_weight: 700;
+    --article_size: 1.5rem;
+    --article_color: #666666;
+    --article_weight: 500;
+    --legend_size: 12px;
+    --legend_color: #666666;
+    --legend_weight: 400;
+    --card_size: 1rem;
+    --card_color: #666666;
+    --card_weight: 400;
+    --card_height: 2rem;
+    --tag_size: 16px;
+    --tag_color: #FFFFFF;
+    --tag_weight: 400;
+    --pColor: #00838F;
+    --plColor: #4FB3BF;
+    --bgColor: #FAFAFA;
+    --bglColor: #DCEDC8;
+    --brColor: #EDEDED;
+    --sColor: #FF8A65;
+    --slColor: #FFBB93;
+    --sdColor: #C75B39;
+    --tagColor: #dedede;
+    --tColor: #666666;
+    --inputColor: #e4e4e4;
+    --btnSize: 20px;
+}

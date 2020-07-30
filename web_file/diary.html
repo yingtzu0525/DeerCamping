@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿營|Deer Camping</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/diary.css">
+    <link rel="stylesheet" href="css/selectedDiary.css">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- My JS Script -->
+    <script type="text/javascript" src="./js/selectedDiary.js"></script>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5" id="mynav">
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- landingPage Start -->
+    <div class="row justify-content-center no-gutters" id="content">
+
+        <!-- carouselBox Start -->
+        <section class="col-lg-12" id="carouselBox">
+            <img id="cover" src="./image/banner/banner_bottom_02.svg" alt="">
+            <!-- 旋轉木馬 -->
+            <div id="diaryTheme" class="carousel slide" data-ride="carousel">
+                <!-- Slider indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#diaryTheme" data-slide-to="0"></li>
+                    <li data-target="#diaryTheme" data-slide-to="1"></li>
+                    <li data-target="#diaryTheme" data-slide-to="2"></li>
+                    <li data-target="#diaryTheme" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Slider Area -->
+                <div class="carousel-inner">
+                    <!-- 露營裝備 -->
+                    <div class="carousel-item active">
+                        <img class="imgArea" src="./image/banner/diary_eqp.jpg" alt="diary_eqp">
+                        <a href="#">
+                            <div class="carousel-caption row justify-content-center ">
+                                <span class="col-10">
+                                    <h1>露營裝備<img id="diary_eqp_01" src="./image/diary_icon/diary_eqp_01.svg">
+                                    </h1>
+
+                                    <p><img id="diary_eqp_02" src="./image/diary_icon/diary_eqp_02.svg">
+                                        帳篷像是一座移動城堡<br>一起建造自己的王國吧！ </p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- 露營食譜 -->
+                    <div class="carousel-item">
+                        <img class="imgArea" src="./image/banner/diary_recipe.jpg" alt="diary_campsite">
+                        <a href="">
+                            <div class="carousel-caption row justify-content-center ">
+                                <span class="col-10">
+                                    <img id="diary_recipe_01" src="./image/diary_icon/diary_recipe_01.svg" alt="">
+                                    <h1>露營食譜</h1>
+                                    <p>露營野餐吃什麼<br>快來看看大家都怎麼做</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 營區報報 -->
+                    <div class="carousel-item">
+                        <img class="imgArea" src="./image/banner/diary_campsite.jpg" alt="diary_campsite">
+                        <a href="">
+                            <div class="carousel-caption row justify-content-center ">
+                                <span class="col-10">
+                                    <img id="diary_camp_01" src="./image/diary_icon/diary_camp_01.svg" alt="" srcset="">
+                                    <img id="diary_camp_02" src="./image/diary_icon/diary_camp_02.svg" alt="" srcset="">
+                                    <h1>營區報報</h1>
+                                    <p>遠離城市紛擾，奔向世外桃源<br>探索各地特色營區</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 遊記分享 -->
+                    <div class="carousel-item">
+                        <img class="imgArea" src="./image/banner/diary_share_02.jpg" alt="diary_share">
+                        <a href="">
+                            <div class="carousel-caption row justify-content-center ">
+                                <span class="col-10">
+                                    <img id="diary_share_01" src="./image/diary_icon/diary_share_01.svg" alt=""
+                                        srcset="">
+                                    <img id="diary_share_02" src="./image/diary_icon/diary_share_02.svg" alt=""
+                                        srcset="">
+                                    <h1>遊記分享</h1>
+                                    <p>精彩紛呈的文章<br>激發下次旅行的靈感</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slider Controller -->
+                <a class="carousel-control-prev" href="#diaryTheme" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#diaryTheme" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- carouselBox End -->
+
+        <!-- selectedDiary Start -->
+        <section id="selectedDiary">
+            <div class="col-lg-8 col-md-10 col-sm-12 article_carousel p-0">
+                <!-- Slider controller -->
+                <div class="carousel__nav">
+                    <span id="moveLeft" class="carousel__arrow">
+                        <i class="carousel__icon fas fa-arrow-left"></i>
+                    </span>
+                    <span id="moveRight" class="carousel__arrow">
+                        <i class="carousel__icon fas fa-arrow-right"></i>
+
+                    </span>
+                </div>
+
+                <!-- Slider Item -->
+                <div class="carousel-box-item carousel-item--1">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <a href="">
+                                <h2 class="carousel-item__subtitle">遊記分享</h2>
+                            </a>
+                            <h1 class="carousel-item__title">樂哈山露營區</h1>
+                            <p class="carousel-item__description ">
+                                清晨散步走到位於遠方、目光可及的格步霧露營區，來回花費約三十分鐘的腳程時間，迎著晨光緩步慢行於平坦的路面，
+                                沿途鳥叫蟲鳴伴著時而飄零的桐花，讓山路獨行的我多了一份陪伴與驚喜，懂得把握晨間獨處的時光，
+                                將讓你增添更多的露營感受、看見山林更美的廣闊視野。
+                            </p>
+                            <a href="#" class="carousel-item__btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-box-item carousel-item--2">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <a href="">
+                                <h2 class="carousel-item__subtitle">遊記分享</h2>
+                            </a>
+                            <h1 class="carousel-item__title">露營車體驗</h1>
+                            <p class="carousel-item__description">浮源居露營車農莊體是新手的首選，進入露營車不用收搭帳蓬，
+                                大力推薦給想前往東部旅遊的露營新手！鄰近各花蓮旅遊景點，到鯉魚潭車程只要25分鐘，露營不必帶裝備，
+                                簡便露營正當道！</p>
+                            <a href="#" class="carousel-item__btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-box-item carousel-item--3">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <a href="">
+                                <h2 class="carousel-item__subtitle">營區報報</h2>
+                            </a>
+                            <h1 class="carousel-item__title">豪華露營新指標
+                            </h1>
+                            <p class="carousel-item__description">隱居於原始林的營位區域，伴隨著豪華帳棚的則是獨立私人衛浴、加大雙人床墊。
+                                豪華露營就是要有舒適的睡眠空間、輕鬆放空的環境，帳內附有電源、小桌、檯燈、風扇、礦泉水、衛浴。 周邊還有戶外桌椅，
+                                蟲鳴鳥叫與最自然戶外體驗。</p>
+                            <a href="#" class="carousel-item__btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-box-item carousel-item--4">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <a href="">
+                                <h2 class="carousel-item__subtitle">營區報報</h2>
+                            </a>
+                            <h1 class="carousel-item__title">合歡山的最佳基地</h1>
+                            <p class="carousel-item__description">夏天的合歡山可以讓人感受晚秋的涼爽舒適，遠離都會炎熱避開繁華塵囂，
+                                到此感受晨間陽光在樹梢間婆娑起舞，午後瞬間山嵐驟起雲霧縹緲，夜間寒風瑟瑟冷意襲人，一整天的氣溫變化，
+                                有如朝穿皮襖午穿紗的雁門關外野人家一般。</p>
+                            <a href="#" class="carousel-item__btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-box-item carousel-item--5">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <a href="">
+                                <h2 class="carousel-item__subtitle">遊記分享</h2>
+                            </a>
+                            <h1 class="carousel-item__title">夏日戲水天堂</h1>
+                            <p class="carousel-item__description">來到南庄河畔露營區，路大條好走無陡坡髪夾彎，大草地營位及五星級衛浴，
+                                一甲的柔軟草地讓你沉浸綠意環境外加超大戲水池看著清涼，玩得更是不亦樂乎</p>
+                            <a href="#" class="carousel-item__btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- selectedDiary End -->
+
+    </div>
+    <!-- landingPage End -->
+
+
+    <!-- 最新文章及推薦 -->
+    <div class="row justify-content-center">
+        <div class="col-lg-11 row  justify-content-center " id="articleBrowser">
+            <!-- 左：最新文章 -->
+            <section class="col-lg-9 border border-primary" id="articleArea">
+                <!-- 文章 Card ＳＴＡＲＴ-->
+                <div class="deerCard3 row no-gutters mt-5">
+                    <span><i class="fas fa-edit mx-2"></i>最新文章</span>
+                    <!-- Card Group -->
+                    <div class="card-group border-success border">
+                        <!-- 日記01 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                            <div class="card">
+                                <!-- 日記照片 -->
+                                <img src="./image/diaryPIc/hot_article/02.jpg" alt="">
+                                <div class="textArea px-4 ">
+                                    <!-- 日記分類 -->
+                                    <div class="d-flex mt-4">
+                                        <span class="badge badge-pill text-white">遊記分享</span>
+                                    </div>
+
+                                    <!-- 日記標題 -->
+                                    <div class="d-flex mt-2">
+                                        <a href="" class="">五星級親子遊樂設施</a>
+                                    </div>
+
+                                    <!-- 日記描述 -->
+                                    <div class="d-flex mt-2">
+                                        <p>苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!!
+                                            他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 日記02 -->
+                        <div class="col-lg-4 col-md-6  col-sm-12">
+                            <div class="card">
+                                <!-- 日記照片 -->
+                                <img src="./image/diaryPIc/hot_article/03.jpg" alt="">
+                                <div class="textArea px-4 ">
+                                    <!-- 日記分類 -->
+                                    <!-- 日記分類 -->
+                                    <div class="d-flex mt-4">
+                                        <span class="badge badge-pill text-white">遊記分享</span>
+                                    </div>
+
+                                    <!-- 日記標題 -->
+                                    <div class="d-flex mt-2">
+                                        <a href="" class="">五星級親子遊樂設施</a>
+                                    </div>
+
+                                    <!-- 日記描述 -->
+                                    <div class="d-flex mt-2">
+                                        <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 日記03 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <!-- 日記照片 -->
+                                <img src="./image/diaryPIc/hot_article/05.jpg" alt="">
+                                <div class="textArea px-4 ">
+
+                                    <!-- 日記分類 -->
+                                    <div class="d-flex mt-4">
+                                        <span class="badge badge-pill text-white">遊記分享</span>
+                                    </div>
+
+                                    <!-- 日記標題 -->
+                                    <div class="d-flex mt-2">
+                                        <a href="" class="">五星級親子遊樂設施</a>
+                                    </div>
+
+                                    <!-- 日記描述 -->
+                                    <div class="d-flex mt-2">
+                                        <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 日記01 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                            <div class="card">
+                                <!-- 日記照片 -->
+                                <img src="./image/diaryPIc/hot_article/02.jpg" alt="">
+                                <div class="textArea px-4 ">
+                                    <!-- 日記分類 -->
+                                    <div class="d-flex mt-4">
+                                        <span class="badge badge-pill text-white">遊記分享</span>
+                                    </div>
+
+                                    <!-- 日記標題 -->
+                                    <div class="d-flex mt-2">
+                                        <a href="" class="">五星級親子遊樂設施</a>
+                                    </div>
+
+                                    <!-- 日記描述 -->
+                                    <div class="d-flex mt-2">
+                                        <p>苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!!
+                                            他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 日記02 -->
+                        <div class="col-lg-4 col-md-6  col-sm-12">
+                            <div class="card">
+                                <!-- 日記照片 -->
+                                <img src="./image/diaryPIc/hot_article/03.jpg" alt="">
+                                <div class="textArea px-4 ">
+                                    <!-- 日記分類 -->
+                                    <!-- 日記分類 -->
+                                    <div class="d-flex mt-4">
+                                        <span class="badge badge-pill text-white">遊記分享</span>
+                                    </div>
+
+                                    <!-- 日記標題 -->
+                                    <div class="d-flex mt-2">
+                                        <a href="" class="">五星級親子遊樂設施</a>
+                                    </div>
+
+                                    <!-- 日記描述 -->
+                                    <div class="d-flex mt-2">
+                                        <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 日記03 -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <!-- 日記照片 -->
+                                <img src="./image/diaryPIc/hot_article/05.jpg" alt="">
+                                <div class="textArea px-4 ">
+
+                                    <!-- 日記分類 -->
+                                    <div class="d-flex mt-4">
+                                        <span class="badge badge-pill text-white">遊記分享</span>
+                                    </div>
+
+                                    <!-- 日記標題 -->
+                                    <div class="d-flex mt-2">
+                                        <a href="" class="">五星級親子遊樂設施</a>
+                                    </div>
+
+                                    <!-- 日記描述 -->
+                                    <div class="d-flex mt-2">
+                                        <p class="">苗栗大湖的四季非露不可景觀休閒露營區是非常推薦露營新手跟親子露營的優質營地!! 他有五星級的親子遊樂設施(沙坑、溜滑梯、戲水池、</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 文章 Card ＥＮＤ-->
+
+                <!-- 分頁按鈕 ＳＴＡＲＴ-->
+
+                <div class="row justify-content-center no-gutters" id="pageBar">
+                    <div class="pageList d-flex justify-content-between">
+                        <ul class="m-0 p-0 text-center">
+
+                            <li class="square_selected">1</li>
+                            <li class="square"><a href="#">2</a></li>
+                            <li class="square"><a href="#">3</a></li>
+                            <li class="square"><a href="#">4</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 分頁按鈕 ＥＮＤ-->
+
+            </section>
+
+
+            <!-- 右：文章推薦 -->
+            <section class="col-lg-3 border border-primary" id="cardList">
+                <div id="recommend">
+                    <p class="box_title">熱門文章推薦</p>
+                    <div class="articleList">
+                        <p><i class="fas fa-fire-alt mx-2"></i>重拾生態平衡的渴望，驚見</p>
+                        <p><i class="fas fa-fire-alt mx-2"></i>來尖石要吃魚?! 在地食材顛覆你的想像</p>
+                        <p><i class="fas fa-fire-alt mx-2"></i>給露營初學者的營釘大小事</p>
+                    </div>
+                </div>
+
+                <div id="category">
+                    <div class="wrap">
+                        <p class="box_title">文章分類</p>
+                        <a href="#" class="badge badge-pill px-3 py-2">露營食譜</a>
+                        <a href="#" class="badge badge-pill px-3 py-2">露營設備</a>
+                        <a href="#" class="badge badge-pill px-3 py-2">遊記分享</a>
+                        <a href="#" class="badge badge-pill px-3 py-2">營區報報</a>
+                    </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <footer class="row justify-content-center no-gutters col-lg-12 p-0 border border-success">
+
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer
+                    Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright
+                    © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>

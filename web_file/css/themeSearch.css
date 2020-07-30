@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+/* @import"fontstyle.css"; */
+
+:root {
+    --title_size: 45px;
+    --price_size: 30px;
+    --article_size: 1.5rem;
+    --small: 1rem;
+    --medium: 2rem;
+    --xSmall: 12pt;
+    --twiceHeight: 2rem;
+    --regular: 400;
+    --middle: 500;
+    --bold: 700;
+    --primary: #03838F;
+    --secondary: #ff8a64;
+    --highlight: #DCECC8;
+    --fontColor: #666666;
+    --bgColor: #fafafa;
+    --tagColor: #BDBDBD;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+/*  nav */
+
+.deernav {
+    /* background-color: sandybrown; */
+    height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    /* background: transparent; */
+}
+
+#landingPage {
+    height: 75vh;
+}
+
+.imgArea {
+    width: 100%;
+    height: calc(75vh - 80px);
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* 選擇器 */
+
+#selector {
+    height: 100px;
+    position: absolute;
+    bottom: 80px;
+    background-color: var(--primary);
+    padding-top: 25px;
+}
+
+#subSelector {
+    /* height: 2000px; */
+    position: absolute;
+    bottom: 0;
+}
+
+.selectBtn {
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 0;
+}
+
+.checkBtn {
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 0;
+    background-color: white;
+    color: var(--primary);
+}
+
+/* Search List CARD    */
+
+.card {
+    border-radius: 0px;
+    max-height: 250px;
+}
+
+.card>.row>div:nth-child(1)>img {
+    border-radius: 0px;
+    max-height: calc(250px - 2px);
+    object-fit: cover;
+    object-position: center;
+}
+
+/* card-body */
+
+.card .wrapBox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card>.row>div:nth-child(2) p.card-title {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: var(--middle);
+}
+
+.card>.row>div:nth-child(2) p.card-text {
+    height: 4.5rem;
+    color: var(--fontColor);
+    line-height: var(--twiceHeight);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.card>.row>div:nth-child(2) .location, .card>.row>div:nth-child(2) a.check {
+    color: var(--fontColor);
+    font-size: var(--small);
+    font-weight: var(--regular);
+}
+
+.card>.row>div:nth-child(2) a.check>i {
+    color: var(--primary);
+}
+
+.card>.row>div:nth-child(2) a:hover {
+    color: var(--primary);
+    font-weight: var(--middle);
+}
+
+/* card bool button */
+
+.card>.row>div:nth-child(3) .bookBtn {
+    color: var(--secondary);
+    font-size: 20px;
+    border: 2px solid var(--secondary);
+    border-radius: 0px;
+    height: 50px;
+    min-width: 120px;
+    ;
+    position: absolute;
+    bottom: 45px;
+    left: calc(50% - 60px);
+}
+
+.card>.row>div:nth-child(3) .bookBtn:hover {
+    color: white;
+    background-color: var(--secondary);
+}
+
+/* Footer */
+
+#bottonFooter {
+    margin-top: 120px;
+    height: 300px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#info {
+    border-top: white 1px solid;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.modal-content form>div:nth-child(1) {
+    border-bottom: 3px solid var(--sColor);
+}
+
+.modal-content form div:nth-child(3) {
+    color: var(--tColor);
+    font-size: var(--text_size);
+    padding-right: 30px;
+}
+
+.modal-content form li div:nth-child(2) {
+    background-color: var(--inputColor);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.cancelBtn {
+    color: var(--sColor);
+    height: 50px;
+    font-size: var(--btnSize);
+    border: var(--sColor) 1px solid;
+    background-color: transparent;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 35px;
+}
+
+.cancelBtn:hover {
+    color: white;
+    border: var(--sdColor) 1px solid;
+    background-color: var(--sdColor);
+}
+
+.cancelBtn:focus {
+    outline: none;
+}
+
+.dismissBtn {
+    color: white;
+    height: 50px;
+    font-size: var(--btnSize);
+    border: none;
+    background-color: var(--sColor);
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 35px;
+    outline: none
+}
+
+.dismissBtn:hover {
+    background-color: var(--sdColor);
+}
+
+.dismissBtn:focus {
+    outline: none;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import"fontstyle.css";
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.pagination {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.pagination a {
+    color: var(--plColor);
+    font-size: var(--text_size);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid var(--plColor);
+}
+
+.pagination a.active {
+    background-color: var(--plColor);
+    color: white;
+    border: 1px solid var(--plColor);
+}
+
+.pagination a:hover:not(.active) {
+    color: white;
+    background-color: var(--plColor);
+}
