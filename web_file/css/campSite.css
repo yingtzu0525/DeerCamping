@@ -36,6 +36,7 @@ body {
 
 /* Nav / Navbar Styles
 ===================================*/
+
 .deernav {
     /* background-color: sandybrown; */
     height: 80px;
@@ -44,20 +45,26 @@ body {
     /* background: transparent; */
 }
 
+/* landing Page Area
+===================================*/
+
 #landingPage {
     height: 75vh;
 }
 
 .imgArea {
     width: 100%;
-    height: calc(75vh - 80px);
+    height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-
-
-
+.contact {
+    display: block;
+    position: absolute;
+    bottom:5vh;
+    left: 0;
+}
 
 /* Footer Style
 ===================================*/
@@ -72,7 +79,6 @@ footer {
     padding-top: 90px;
     padding-bottom: 60px;
 }
-
 
 a:link {
     text-decoration: none;

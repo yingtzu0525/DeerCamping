@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <!-- My css style -->
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="./_temp/subS.css">
 
 
     <!-- jQuery -->
@@ -20,6 +21,7 @@
     <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/selector.js"></script>
 </head>
 
 <body>
@@ -52,20 +54,35 @@
 
 
     <!-- Main Content Start -->
-    <div class="row justify-content-center no-gutters">
+    <div class="row justify-content-center no-gutters border border-primary">
+
         <!-- Landing Page 80Vh col-lg-10 -->
-        <section class="col-lg-12 d-flex  justify-content-center" id="landingPage">
+
+        <section class="col-lg-12 d-flex  justify-content-center border border-primary" id="landingPage">
             <img class="imgArea img-fluid" src="./image/hero_img_02.jpg" alt="">
+
+            <!-- main Selector -->
 
             <div class="col-lg-10" id="selector">
                 <form action="" method="post">
-                    <!-- 下拉選單 -->
+
                     <!-- 地區 -->
+                    <div class="custom-select" >
+                        <select>
+                            <option value="0">地區</option>
+                            <option value="north">北部地區</option>
+                            <option value="middle">中部地區</option>
+                            <option value="south">南部地區</option>
+                            <option value="east">東部地區</option>
+                        </select>
+                    </div>
+
+
                     <div class="btn-group mx-1">
-                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <select type="button" class="text-white btn selectBtn dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="false" aria-expanded="true">
                             <i class="mx-2 fas fa-map-marker-alt"></i>地區
-                        </button>
+                        </select>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">北部地區</a>
                             <a class="dropdown-item" href="#">中部地區</a>
@@ -94,11 +111,8 @@
                 </form>
             </div>
             <!-- SubSelector -->
-            <div class="col-lg-10 border border-dark" id="subSelector">
-                縣市
-                熱門選項
-                星級評分
-            </div>
+
+
         </section>
 
 
@@ -476,7 +490,7 @@
 
         </section>
         <!-- theme body End -->
-    
+
     </div>
     <!-- Main Content End -->
 

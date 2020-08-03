@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- My css style -->
+    <link rel="stylesheet" href="css/orderApply.css">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm deernav px-5">
+            <a class="navbar-brand text-white" href="#">Deer Camping</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">找營區</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">露營日記</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-white" href="#">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">刊登營區</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- CONTENT START col-lg-8 -->
+    <div class="row justify-content-center no-gutters">
+
+        <!-- STEPS  -->
+        <section class="col-lg-8 col-md-12" id="heading">
+
+            <div class="stepTxt">
+                <p class="">01</p>
+                <p>填寫訂位資料</p>
+            </div>
+
+            <div class="stepTxt pill">
+                <p>02</p>
+                <p>填寫訂購人資料</p>
+            </div>
+
+            <div class="stepTxt">
+                <p>03</p>
+                <p>完成預定</p>
+            </div>
+        </section>
+        <!-- STEPS  -->
+
+        <section class="col-lg-9 col-md-12 row no-gutters justify-content-between" id="orderContainer">
+
+            <!-- 左：訂位資訊 -->
+            <div class="col-lg-4  col-md-4">
+                <div id="leftInfo">
+                    <img class="info_pic" src="./image/campPic/temp_01.jpg" alt="">
+                    <span id="name"> 拉拉山 木村的家露營區</span>
+                    <span>
+                        <p id="area">A區雨棚景觀區 : </p>
+                        <p id="area_qty">2帳</p>
+                    </span>
+                    <span>
+                        <p>日期 :</p>
+                        <p id="booking_date">2020/07/15 - 2020/07/16 </p>
+                    </span>
+                    <span>
+                        <p>金額 :</p>
+                        <p id="booking_price"> $ 2400</p>
+                    </span>
+                </div>
+            </div>
+
+            <!-- 右：訂位表格 -->
+            <div class="col-lg-7 col-md-8" id="orderTable">
+
+                <h3>訂購人資料</h3>
+                <form method="" action="">
+
+                    <div class="formRow">
+                        <label for="userName">姓名</label> <br>
+                        <input id="userName" type="text">
+                        <input type="radio" id="man" name="gender" value="male"><label for="man">先生</label>
+                        <input type="radio" id="woman" name="gender" value="female"><label for="woman">小姐</label>
+                    </div>
+
+                    <div class="formRow">
+                        <label for="eMail">信箱</label> <br>
+                        <input id="eMail" type="text" placeholder="abc@email.com">
+
+                        <label for="eMailCorfirm" class="ml-4">信箱確認</label>
+                        <input id="eMailCorfirm" type="text">
+                    </div>
+
+                    <div class="formRow">
+                        <label for="phone">手機</label>
+                        <input id="phone" type="text" placeholder="0911-123-456">
+                    </div>
+                    <div class="formRow  align-items-start">
+                        <label for="phone">備註</label><br>
+                        <textarea rows="3" placeholder="特殊要求或疑問"></textarea>
+                    </div>
+
+                    <div class="btnArea">
+                        <button class="btn prev" type="button" id="" name="" onclick="history.back()"
+                            value="回到上一頁">上一步</button>
+                        <button class="btn next" type="submit" id="btnOK" name="btnOK">下一步</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!-- CONTENT END col-lg-8 -->
+
+
+    <!-- Footer Start -->
+    <footer class="col-lg-12 p-0 justify-content-center">
+        <div class="container text_white">
+
+            <div class="row pb-5">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Deer
+                    Camping</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="#" class="text-white">找營區</a>
+                    <a href="#" class="text-white ml-5">露營日記</a>
+                    <a href="#" class="text-white ml-5">會員登入</a>
+                    <a href="#" class="text-white ml-5">刊登營區</a></div>
+            </div>
+
+            <div class="row" id="info">
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">Copyright
+                    © 2020, DEER CAMPING ALL rights reserved.</div>
+                <div class="mt-5 col-lg-6 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter ml-5"></i>
+                    <i class="fab fa-facebook-f ml-5"></i>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>

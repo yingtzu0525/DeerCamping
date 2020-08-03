@@ -22,6 +22,7 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    outline: 0;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -33,7 +34,9 @@ body {
     background-color: var(--bgColor);
 }
 
-/*  nav */
+/* ＮＡＶＢＡＲ
+===================================*/
+
 .deernav {
     /* background-color: sandybrown; */
     height: 80px;
@@ -41,6 +44,9 @@ body {
     font-weight: 500;
     /* background: transparent; */
 }
+
+/* ＬＡＤＩＮＧ ＰＡＧＥ
+===================================*/
 
 #landingPage {
     height: 75vh;
@@ -53,7 +59,8 @@ body {
     object-position: bottom;
 }
 
-/* 選擇器 */
+/* ＭＡＩＮ ＳＥＬＥＣＴＯＲ
+===================================*/
 
 #selector {
     height: 100px;
@@ -63,11 +70,73 @@ body {
     padding-top: 25px;
 }
 
-#subSelector {
-    height: 80px;
-    position: absolute;
-    bottom: 0;
+#selector .custom-select {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
 }
+
+/*hide original SELECT element: */
+
+#selector select {
+    display: none;
+}
+
+#selector .select-selected {
+    background-color: var(--primary);
+}
+
+/* Style the arrow inside the select element: */
+
+#selector .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+
+#selector .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----- */
 
 .selectBtn {
     height: 50px;
@@ -86,10 +155,8 @@ body {
     color: var(--primary);
 }
 
-
-
-
-/* 主題區 */
+/* 主題目錄：四大主題圖示
+===================================*/
 
 #themeArea {
     height: 250px;
@@ -124,7 +191,8 @@ body {
     background-size: cover;
 }
 
-/* 主題card section */
+/* 主題區：主題ＣＡＲＤ
+===================================*/
 
 .themeGroup {
     /* position: absolute; */
@@ -145,6 +213,7 @@ body {
 }
 
 /* CARD */
+
 .deerCard1 .card {
     height: 400px;
 }
@@ -192,7 +261,6 @@ body {
     font-weight: 400;
 }
 
-
 .viewBtn {
     height: 50px;
     font-size: 1rem;
@@ -200,10 +268,10 @@ body {
     color: var(--secondary);
     border-radius: 0;
     margin-top: 60px;
-    
 }
 
-/* Footer */
+/* ＦＯＯＴＥＲ
+===================================*/
 
 footer {
     margin-top: 120px;
@@ -215,7 +283,6 @@ footer {
     padding-top: 90px;
     padding-bottom: 60px;
 }
-
 
 a:link {
     text-decoration: none;
