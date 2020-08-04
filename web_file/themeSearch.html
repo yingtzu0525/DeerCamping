@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <!-- My css style -->
     <link rel="stylesheet" href="css/themeSearch.css">
+    <link rel="stylesheet" href="./css/subSelector.css">
 
 
     <!-- jQuery -->
@@ -57,93 +58,223 @@
         <section class="col-lg-12 d-flex  justify-content-center" id="landingPage">
             <img class="imgArea img-fluid" src="./image/hero_img_02.jpg" alt="">
 
-            <div class="col-lg-10" id="selector">
-                <form action="" method="post">
-                    <!-- 下拉選單 -->
-                    <!-- 地區 -->
-                    <div class="btn-group mx-1">
-                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="mx-2 fas fa-map-marker-alt"></i>地區
+            <!-- main Selector -->
+            <div class="col-lg-10 " id="mainSelector">
+
+                <!-- 地區 -->
+                <div class="selectorWrap">
+                    <i class="fas fa-map-marker-alt mx-2"></i>
+                    <select class="selectBtn" name="area" id="area">
+                        <option value="" hidden selected>地區</option>
+                        <option value="" disabled>請選擇</option>
+                        <option value="notrh-area">北部地區</option>
+                        <option value="middle-area">中部地區</option>
+                        <option value="south-area">南部地區</option>
+                        <option value="east-area">東部地區</option>
+                    </select>
+                </div>
+
+                <!-- 日期 -->
+                <div class="selectorWrap">
+                    <label for="booking_date">
+                        <i class="far fa-calendar-alt mx-2"></i>日期</label>
+
+
+                </div>
+
+                <!-- 帳數 -->
+                <div class="selectorWrap">
+                    <label for="tentQty"><i class="fas fa-campground mx-2"></i>帳數</label>
+
+                </div>
+
+                <div class="selectorWrap">
+                    <button class="checkBtn">立即搜尋</button>
+                </div>
+            </div>
+
+
+            <!-- SubSelector -->
+            <div class="col-lg-12 p-0 " id="subSelector_area">
+
+                <div class="subSelector">
+
+                    <!-- 縣市 -->
+                    <div class="myDropdown ">
+
+                        <!-- 下拉式選單 -->
+                        <button class="myDropbtn">縣市
+                            <i class="fa fa-caret-down"></i>
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">北部地區</a>
-                            <a class="dropdown-item" href="#">中部地區</a>
-                            <a class="dropdown-item" href="#">南部地區</a>
-                            <a class="dropdown-item" href="#">東部地區</a>
+
+                        <!-- 選單內容 -->
+                        <div class="myDropdown-content ">
+                            <div class="row p-4">
+                                <div class="col-lg-3">
+                                    <h3>北部地區</h3>
+                                    <input type="checkbox" id="Taipei" name="notrh-area" value="台北市">
+                                    <label for="Taipei">台北市</label><br>
+                                    <input type="checkbox" id="Newtaipei" name="notrh-area" value="新北市">
+                                    <label for="Newtaipei">新北市</label><br>
+                                    <input type="checkbox" id="Taoyuan" name="notrh-area" value="桃園市">
+                                    <label for="Taoyuan">桃園市</label><br>
+                                    <input type="checkbox" id="Hsinchu" name="notrh-area" value="新竹縣">
+                                    <label for="Hsinchu">新竹縣</label><br>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>中部地區</h3>
+                                    <input type="checkbox" id="Miaoli" name="notrh-area" value="苗栗縣">
+                                    <label for="Miaoli">苗栗縣</label><br>
+                                    <input type="checkbox" id="Taichung" name="notrh-area" value="台中市">
+                                    <label for="Taichung">台中市</label><br>
+                                    <input type="checkbox" id="Nantou" name="notrh-area" value="南投縣">
+                                    <label for="Nantou">南投縣</label><br>
+                                    <input type="checkbox" id="Yunlin" name="notrh-area" value="雲林縣">
+                                    <label for="Yunlin">雲林縣</label><br>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>南部地區</h3>
+                                    <input type="checkbox" id="Chiayi" name="notrh-area" value="嘉義縣">
+                                    <label for="Chiayi">嘉義縣</label><br>
+                                    <input type="checkbox" id="Tainan" name="notrh-area" value="台南市">
+                                    <label for="Tainan">台南市</label><br>
+                                    <input type="checkbox" id="Kaohsiung" name="notrh-area" value="高雄市">
+                                    <label for="Kaohsiung">高雄市</label><br>
+                                    <input type="checkbox" id="Pingtung" name="notrh-area" value="屏東縣">
+                                    <label for="Pingtung">屏東縣</label><br>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>東部地區</h3>
+                                    <input type="checkbox" id="Yilan" name="notrh-area" value="宜蘭縣">
+                                    <label for="Yilan">宜蘭縣</label><br>
+                                    <input type="checkbox" id="Hualien" name="notrh-area" value="花蓮縣">
+                                    <label for="Hualien">花蓮縣</label><br>
+                                    <input type="checkbox" id="Taitung" name="notrh-area" value="台東縣">
+                                    <label for="Taitung">台東縣</label><br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="btnArea col justify-content-end">
+                                <a href="#" class="clear " id="clearAll">清除全部選項</a>
+                                <button class="btn" id="submitBtn">立即搜尋</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- 熱門選項 -->
+                    <div class="myDropdown">
+                        <!-- 下拉式選單 -->
+                        <button class="myDropbtn">熱門選項
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <!-- 選單內容 -->
+                        <div class="myDropdown-content">
+                            <div class="row p-4">
+                                <div class="col-lg-4 ">
+                                    <h3>裝備服務</h3>
+                                    <input type="checkbox" id="eqp1" name="eqp" value="1">
+                                    <label for="eqp1">免搭帳輕露營</label><br>
+                                    <input type="checkbox" id="eqp2" name="eqp" value="2">
+                                    <label for="eqp2">裝備出租</label><br>
+                                    <input type="checkbox" id="eqp3" name="eqp" value="3">
+                                    <label for="eqp3">可停露營拖車 </label><br>
+                                    <input type="checkbox" id="eqp4" name="eqp" value="4">
+                                    <label for="eqp4">租帳篷直送 </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h3>環境設施</h3>
+                                    <input type="checkbox" id="eqp5" name="eqp" value="">
+                                    <label for="eqp5">旅遊基地/景點</label><br>
+                                    <input type="checkbox" id="eqp6" name="eqp" value="">
+                                    <label for="eqp6">雲海</label><br>
+                                    <input type="checkbox" id="eqp7" name="eqp" value="">
+                                    <label for="eqp7">夜景</label><br>
+                                    <input type="checkbox" id="eqp8" name="eqp" value="">
+                                    <label for="eqp8">近溪流</label><br>
+                                    <input type="checkbox" id="eqp9" name="eqp" value="">
+                                    <label for="eqp9">近海邊</label><br>
+                                    <input type="checkbox" id="eqp10" name="eqp" value="">
+                                    <label for="eqp10">釣魚</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h3>景觀景點</h3>
+                                    <input type="checkbox" id="eqp11" name="eqp" value="">
+                                    <label for="eqp11">有雨棚</label><br>
+                                    <input type="checkbox" id="eqp12" name="eqp" value="">
+                                    <label for="eqp12">團露大草皮</label><br>
+                                    <input type="checkbox" id="eqp13" name="eqp" value="">
+                                    <label for="eqp13">小包區</label><br>
+                                    <input type="checkbox" id="eqp14" name="eqp" value="">
+                                    <label for="eqp14">兒童遊樂區</label><br>
+                                    <input type="checkbox" id="eqp15" name="eqp" value="">
+                                    <label for="eqp15">少帳包場</label>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="btnArea col justify-content-end">
+                                <a href="#" class="clear " id="clearAll">清除全部選項</a>
+                                <button class="btn" id="submitBtn">立即搜尋</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- 日期 -->
-                    <div class="btn-group  mx-1">
-                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="mx-2 far fa-calendar-alt"></i></i>日期
-                        </button>
-                    </div>
-                    <!-- 帳數 -->
-                    <div class="btn-group  mx-1">
-                        <label for="tentQty">
-                            <!-- <i class="mx-2 far fa-calendar-alt"></i></i>帳數 -->
-                        </label>
-                        <input type="number" class="text-left text-white btn selectBtn" name="tentQty" id="tentQty">
-                    </div>
-                    <!-- 送出 -->
-                    <div class="btn-group  mx-1">
-                        <button type="button" class="text-center btn  checkBtn ">立即搜尋</button>
-                    </div>
-                </form>
-            </div>
-            <!-- SubSelector -->
-            <div class="col-lg-10 border border-dark" id="subSelector">
-                <div class="filterBar">
-                    <div class="PillDropdown ">
-                        <button class="btn" data-toggle="collapse" data-target="#fliterList" aria-expanded="true"
-                            aria-controls="#fliterList">縣市<i class="fas fa-chevron-down"></i></button>
-                        <!-- 選單下拉 -->
-                        <!-- panel  -->
-                        <!-- <aside class="MoreFilter" id="fliterList">
-                            <ul>
-                                <li>臺北市</li>
-                                <li>新北市</li>
-                                <li>基隆市</li>
-                                <li>桃園市</li>
-                                <li>新竹縣</li>
-                                <li>宜蘭縣</li>
-                            </ul> -->
 
-                        <!-- 送出選項 -->
-                        <!-- <footer class="MoreFilter_Footer">
-                                <div class="MoreFilter_Wrapper MoreFilter__Wrapper--bottom">
-                                    <button
-                                        class="btn MoreFilter__Button MoreFilter__Button--noStyle">清除篩選設定</button><button
-                                        class="btn MoreFilter__Button MoreFilter__Button--blue"><span>完成</span></button></span>
+                    <!-- 星級評分 -->
+                    <div class="myDropdown ">
+                        <!-- 下拉式選單 -->
+                        <button class="myDropbtn">星級評分
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <!-- 選單內容 -->
+                        <div class="myDropdown-content">
+                            <div class="myRow row p-4">
+                                <div class="col-lg-12">
+
+                                    <input type="radio" id="class_1" name="level" value="1">
+                                    <label for="class_1">四星以上</label><br>
+                                    <input type="radio" id="class_2" name="level" value="2">
+                                    <label for="class_2">三星 ~ 四星</label><br>
+                                    <input type="radio" id="class_3" name="level" value="3">
+                                    <label for="class_3">二星 ~ 三星</label><br>
+                                    <input type="radio" id="class_4" name="level" value="4">
+                                    <label for="class_4">二星以下</label><br>
+
                                 </div>
-                            </footer>
-                        </aside> -->
+                            </div>
+                            <!-- button -->
+                            <div class="btnArea col justify-content-end">
+                                <a href="#" class="clear " id="clearAll">清除全部選項</a>
+                                <button class="btn" id="submitBtn">立即搜尋</button>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
+
             </div>
+
         </section>
 
 
-        <!-- bread  -->
-        <section class="col-lg-10 border border-warning" id="bread">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-            </nav>
+        <!-- tag group  -->
+        <section class="col-lg-10" id="tag_area">
+            <span class="badge badge-pill text-white px-2 py-2">宜蘭縣</span>
+            <span class="badge badge-pill text-white px-2 py-2">兒童遊樂區</span>
+            <span class="badge badge-pill text-white px-2 py-2">雲海</span>
         </section>
 
         <!-- Search List Start -->
         <section class="col-lg-10 ">
-
-
             <!-- RWD col-lg-12 col-md-12 -->
-            <div class="card my-4">
+            <div class="card my-5">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="./image/campPic/temp_01.jpg" class="card-img-top h-100 img-fluid" alt="...">
@@ -159,13 +290,13 @@
                                     <i class="fas fa-star-half text-warning"></i>
                                 </span>
                             </div>
-                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～ 
+                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～
                                 坐在虎嘯山莊的觀景台上，俯瞰超美麗的整個埔里小鎮，
                                 不管是清晨的雲海，白天的飛行傘，千變萬化的夕陽，無光害的夜晚星空，或小鎮的夜景，絕對讓你回味無窮！
                                 拿一本書吹著徐徐涼風，享受愜意又慵懶的陽光，或是和朋友或家人在草地上嬉戲玩耍，
                                 為自己充充電，帶個輕裝備就可來個遠離塵囂的浪漫時光。</p>
                             <!--hr-->
-                            <div class="wrapBox justify-content-between" >
+                            <div class="wrapBox justify-content-between">
                                 <span class="location mt-1 "><i class="fas fa-map-marker-alt mx-2"></i>南投縣</span>
                                 <a href="" class="check  mt-1">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
                             </div>
@@ -177,7 +308,158 @@
                 </div>
             </div>
 
-            
+            <div class="card my-5">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./image/campPic/temp_01.jpg" class="card-img-top h-100 img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="card-body pr-0">
+                            <div class="wrapBox justify-content-between">
+                                <p class="card-title ">虎嘯山莊露營區</p>
+                                <span class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                </span>
+                            </div>
+                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～
+                                坐在虎嘯山莊的觀景台上，俯瞰超美麗的整個埔里小鎮，
+                                不管是清晨的雲海，白天的飛行傘，千變萬化的夕陽，無光害的夜晚星空，或小鎮的夜景，絕對讓你回味無窮！
+                                拿一本書吹著徐徐涼風，享受愜意又慵懶的陽光，或是和朋友或家人在草地上嬉戲玩耍，
+                                為自己充充電，帶個輕裝備就可來個遠離塵囂的浪漫時光。</p>
+                            <!--hr-->
+                            <div class="wrapBox justify-content-between">
+                                <span class="location mt-1 "><i class="fas fa-map-marker-alt mx-2"></i>南投縣</span>
+                                <a href="" class="check  mt-1">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="btn bookBtn ">立即預定</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-5">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./image/campPic/temp_01.jpg" class="card-img-top h-100 img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="card-body pr-0">
+                            <div class="wrapBox justify-content-between">
+                                <p class="card-title ">虎嘯山莊露營區</p>
+                                <span class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                </span>
+                            </div>
+                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～
+                                坐在虎嘯山莊的觀景台上，俯瞰超美麗的整個埔里小鎮，
+                                不管是清晨的雲海，白天的飛行傘，千變萬化的夕陽，無光害的夜晚星空，或小鎮的夜景，絕對讓你回味無窮！
+                                拿一本書吹著徐徐涼風，享受愜意又慵懶的陽光，或是和朋友或家人在草地上嬉戲玩耍，
+                                為自己充充電，帶個輕裝備就可來個遠離塵囂的浪漫時光。</p>
+                            <!--hr-->
+                            <div class="wrapBox justify-content-between">
+                                <span class="location mt-1 "><i class="fas fa-map-marker-alt mx-2"></i>南投縣</span>
+                                <a href="" class="check  mt-1">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="btn bookBtn ">立即預定</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-5">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./image/campPic/temp_01.jpg" class="card-img-top h-100 img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="card-body pr-0">
+                            <div class="wrapBox justify-content-between">
+                                <p class="card-title ">虎嘯山莊露營區</p>
+                                <span class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                </span>
+                            </div>
+                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～
+                                坐在虎嘯山莊的觀景台上，俯瞰超美麗的整個埔里小鎮，
+                                不管是清晨的雲海，白天的飛行傘，千變萬化的夕陽，無光害的夜晚星空，或小鎮的夜景，絕對讓你回味無窮！
+                                拿一本書吹著徐徐涼風，享受愜意又慵懶的陽光，或是和朋友或家人在草地上嬉戲玩耍，
+                                為自己充充電，帶個輕裝備就可來個遠離塵囂的浪漫時光。</p>
+                            <!--hr-->
+                            <div class="wrapBox justify-content-between">
+                                <span class="location mt-1 "><i class="fas fa-map-marker-alt mx-2"></i>南投縣</span>
+                                <a href="" class="check  mt-1">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="btn bookBtn ">立即預定</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-5">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./image/campPic/temp_01.jpg" class="card-img-top h-100 img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="card-body pr-0">
+                            <div class="wrapBox justify-content-between">
+                                <p class="card-title ">虎嘯山莊露營區</p>
+                                <span class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half text-warning"></i>
+                                </span>
+                            </div>
+                            <p class="card-text mt-5 pr-3">虎嘯山莊位於南投埔里，距離市區僅需5分鐘，可品嚐許多埔里美食～
+                                坐在虎嘯山莊的觀景台上，俯瞰超美麗的整個埔里小鎮，
+                                不管是清晨的雲海，白天的飛行傘，千變萬化的夕陽，無光害的夜晚星空，或小鎮的夜景，絕對讓你回味無窮！
+                                拿一本書吹著徐徐涼風，享受愜意又慵懶的陽光，或是和朋友或家人在草地上嬉戲玩耍，
+                                為自己充充電，帶個輕裝備就可來個遠離塵囂的浪漫時光。</p>
+                            <!--hr-->
+                            <div class="wrapBox justify-content-between">
+                                <span class="location mt-1 "><i class="fas fa-map-marker-alt mx-2"></i>南投縣</span>
+                                <a href="" class="check  mt-1">查看營區<i class="fas fa-chevron-right pl-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="btn bookBtn ">立即預定</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁按鈕 ＳＴＡＲＴ-->
+
+            <div class="row justify-content-center no-gutters" id="pageBar">
+                <div class="pageList d-flex justify-content-between">
+                    <ul class="m-0 p-0 text-center">
+
+                        <li class="square_selected">1</li>
+                        <li class="square"><a href="#">2</a></li>
+                        <li class="square"><a href="#">3</a></li>
+                        <li class="square"><a href="#">4</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 分頁按鈕 ＥＮＤ-->
         </section>
         <!-- Search List End -->
 

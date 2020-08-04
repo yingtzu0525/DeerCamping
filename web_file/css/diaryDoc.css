@@ -49,8 +49,9 @@ body {
     width:100%
 }
 
-/* 日記標頭區 */
 
+/* ＢＲＥＡＤＣＲＵＭＢ
+===================================*/
 .breadcrumb {
     background-color: transparent;
     padding: 0;
@@ -75,7 +76,8 @@ body {
     content: "";
 }
 
-/* 標題欄 */
+/* 標題區
+===================================*/
 
 #infoBar {
     margin-top: 50px;
@@ -109,7 +111,8 @@ body {
     margin-left: auto;
 }
 
-/* 日記內容設定 */
+/* 日記內容設定
+===================================*/
 
 #main {
     margin-top: 50px;
@@ -137,7 +140,6 @@ body {
     background-color: white;
     border: 0px solid;
     box-shadow: 2px 2px 3px #BDBDBD;
-    /* height: auto; */
     margin-bottom: 50px;
 }
 
@@ -169,7 +171,8 @@ body {
     font-size: var(--small);
 }
 
-/* 更多文章 */
+/* 更多文章
+===================================*/
 
 #author>div a {
     color: var(--primary);
@@ -225,18 +228,9 @@ body {
     margin: 10px 5px
 }
 
-/* 
 
-.btn {
-    margin-top: 10px;
-    margin-right: 10px;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    border-bottom-left-radius: 150px;
-} */
-
-/* Footer */
+/* ＦＯＯＴＥＲ
+===================================*/
 
 footer {
     margin-top: 120px;

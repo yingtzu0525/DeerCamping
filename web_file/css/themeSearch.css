@@ -50,45 +50,26 @@ body {
 
 .imgArea {
     width: 100%;
-    height: calc(75vh - 80px);
+    height: calc(75vh - 50px);
     object-fit: cover;
     object-position: bottom;
 }
 
-/* 選擇器 */
+/* ＴＡＧ ＡＲＥＡ
+===================================*/
 
-#selector {
-    height: 100px;
-    position: absolute;
-    bottom: 80px;
-    background-color: var(--primary);
-    padding-top: 25px;
+#tag_area {
+    margin: 40px 0 0;
 }
 
-#subSelector {
-    /* height: 2000px; */
-    position: absolute;
-    bottom: 0;
+#tag_area span.badge {
+    margin: 0px 5px;
+    padding-top: 5px;
+    background-color: var(--tagColor);
 }
 
-.selectBtn {
-    height: 50px;
-    width: 150px;
-    font-size: 1rem;
-    border: 2px solid white;
-    border-radius: 0;
-}
-
-.checkBtn {
-    height: 50px;
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 0;
-    background-color: white;
-    color: var(--primary);
-}
-
-/* Search List CARD    */
+/* Search List CARD
+===================================*/
 
 .card {
     border-radius: 0px;
@@ -139,7 +120,7 @@ body {
     font-weight: var(--middle);
 }
 
-/* card bool button */
+/* card booking button */
 
 .card>.row>div:nth-child(3) .bookBtn {
     color: var(--secondary);
@@ -157,6 +138,50 @@ body {
 .card>.row>div:nth-child(3) .bookBtn:hover {
     color: white;
     background-color: var(--secondary);
+}
+
+/* page nav Styles
+===================================*/
+
+#pageBar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#pageBar ul, #pageBar li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#pageBar .square {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid var(--primary);
+    box-sizing: content-box;
+}
+
+#pageBar .square>a {
+    line-height: 40px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#pageBar ul li.square_selected {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background-color: transparent;
 }
 
 /* Footer */

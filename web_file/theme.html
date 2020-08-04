@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <!-- My css style -->
     <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="./_temp/subS.css">
+    <link rel="stylesheet" href="./css/subSelector.css">
 
 
     <!-- jQuery -->
@@ -54,66 +54,220 @@
 
 
     <!-- Main Content Start -->
-    <div class="row justify-content-center no-gutters border border-primary">
+    <div class="row justify-content-center no-gutters">
 
         <!-- Landing Page 80Vh col-lg-10 -->
 
-        <section class="col-lg-12 d-flex  justify-content-center border border-primary" id="landingPage">
-            <img class="imgArea img-fluid" src="./image/hero_img_02.jpg" alt="">
+        <section class="col-lg-12 d-flex  justify-content-center" id="landingPage">
+            <img class="imgArea img-fluid" src="./image/hero_img_01.jpg" alt="">
 
             <!-- main Selector -->
+            <div class="col-lg-10 " id="mainSelector">
 
-            <div class="col-lg-10" id="selector">
-                <form action="" method="post">
+                <!-- 地區 -->
+                <div class="selectorWrap">
+                    <i class="fas fa-map-marker-alt mx-2"></i>
+                    <select class="selectBtn" name="area" id="area">
+                        <option value="" hidden selected>地區</option>
+                        <option value="" disabled>請選擇</option>
+                        <option value="notrh-area">北部地區</option>
+                        <option value="middle-area">中部地區</option>
+                        <option value="south-area">南部地區</option>
+                        <option value="east-area">東部地區</option>
+                    </select>
+                </div>
 
-                    <!-- 地區 -->
-                    <div class="custom-select" >
-                        <select>
-                            <option value="0">地區</option>
-                            <option value="north">北部地區</option>
-                            <option value="middle">中部地區</option>
-                            <option value="south">南部地區</option>
-                            <option value="east">東部地區</option>
-                        </select>
+                <!-- 日期 -->
+                <div class="selectorWrap">
+                    <label for="booking_date">
+                        <i class="far fa-calendar-alt mx-2"></i>日期</label>
+
+
+                </div>
+
+                <!-- 帳數 -->
+                <div class="selectorWrap">
+                    <label for="tentQty"><i class="fas fa-campground mx-2"></i>帳數</label>
+
+                </div>
+
+                <div class="selectorWrap">
+                    <button class="checkBtn">立即搜尋</button>
+                </div>
+            </div>
+
+
+            <!-- SubSelector -->
+            <div class="col-lg-12 p-0 " id="subSelector_area">
+
+                <div class="subSelector">
+
+                    <!-- 縣市 -->
+                    <div class="myDropdown ">
+
+                        <!-- 下拉式選單 -->
+                        <button class="myDropbtn">縣市
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <!-- 選單內容 -->
+                        <div class="myDropdown-content ">
+                            <div class="row p-4">
+                                <div class="col-lg-3">
+                                    <h3>北部地區</h3>
+                                    <input type="checkbox" id="Taipei" name="notrh-area" value="台北市">
+                                    <label for="Taipei">台北市</label><br>
+                                    <input type="checkbox" id="Newtaipei" name="notrh-area" value="新北市">
+                                    <label for="Newtaipei">新北市</label><br>
+                                    <input type="checkbox" id="Taoyuan" name="notrh-area" value="桃園市">
+                                    <label for="Taoyuan">桃園市</label><br>
+                                    <input type="checkbox" id="Hsinchu" name="notrh-area" value="新竹縣">
+                                    <label for="Hsinchu">新竹縣</label><br>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>中部地區</h3>
+                                    <input type="checkbox" id="Miaoli" name="notrh-area" value="苗栗縣">
+                                    <label for="Miaoli">苗栗縣</label><br>
+                                    <input type="checkbox" id="Taichung" name="notrh-area" value="台中市">
+                                    <label for="Taichung">台中市</label><br>
+                                    <input type="checkbox" id="Nantou" name="notrh-area" value="南投縣">
+                                    <label for="Nantou">南投縣</label><br>
+                                    <input type="checkbox" id="Yunlin" name="notrh-area" value="雲林縣">
+                                    <label for="Yunlin">雲林縣</label><br>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>南部地區</h3>
+                                    <input type="checkbox" id="Chiayi" name="notrh-area" value="嘉義縣">
+                                    <label for="Chiayi">嘉義縣</label><br>
+                                    <input type="checkbox" id="Tainan" name="notrh-area" value="台南市">
+                                    <label for="Tainan">台南市</label><br>
+                                    <input type="checkbox" id="Kaohsiung" name="notrh-area" value="高雄市">
+                                    <label for="Kaohsiung">高雄市</label><br>
+                                    <input type="checkbox" id="Pingtung" name="notrh-area" value="屏東縣">
+                                    <label for="Pingtung">屏東縣</label><br>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>東部地區</h3>
+                                    <input type="checkbox" id="Yilan" name="notrh-area" value="宜蘭縣">
+                                    <label for="Yilan">宜蘭縣</label><br>
+                                    <input type="checkbox" id="Hualien" name="notrh-area" value="花蓮縣">
+                                    <label for="Hualien">花蓮縣</label><br>
+                                    <input type="checkbox" id="Taitung" name="notrh-area" value="台東縣">
+                                    <label for="Taitung">台東縣</label><br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="btnArea col justify-content-end">
+                                <a href="#" class="clear " id="clearAll">清除全部選項</a>
+                                <button class="btn" id="submitBtn">立即搜尋</button>
+                            </div>
+                        </div>
+
+
                     </div>
 
-
-                    <div class="btn-group mx-1">
-                        <select type="button" class="text-white btn selectBtn dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="false" aria-expanded="true">
-                            <i class="mx-2 fas fa-map-marker-alt"></i>地區
-                        </select>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">北部地區</a>
-                            <a class="dropdown-item" href="#">中部地區</a>
-                            <a class="dropdown-item" href="#">南部地區</a>
-                            <a class="dropdown-item" href="#">東部地區</a>
+                    <!-- 熱門選項 -->
+                    <div class="myDropdown">
+                        <!-- 下拉式選單 -->
+                        <button class="myDropbtn">熱門選項
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <!-- 選單內容 -->
+                        <div class="myDropdown-content">
+                            <div class="row p-4">
+                                <div class="col-lg-4 ">
+                                    <h3>裝備服務</h3>
+                                    <input type="checkbox" id="eqp1" name="eqp" value="1">
+                                    <label for="eqp1">免搭帳輕露營</label><br>
+                                    <input type="checkbox" id="eqp2" name="eqp" value="2">
+                                    <label for="eqp2">裝備出租</label><br>
+                                    <input type="checkbox" id="eqp3" name="eqp" value="3">
+                                    <label for="eqp3">可停露營拖車 </label><br>
+                                    <input type="checkbox" id="eqp4" name="eqp" value="4">
+                                    <label for="eqp4">租帳篷直送 </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h3>環境設施</h3>
+                                    <input type="checkbox" id="eqp5" name="eqp" value="">
+                                    <label for="eqp5">旅遊基地/景點</label><br>
+                                    <input type="checkbox" id="eqp6" name="eqp" value="">
+                                    <label for="eqp6">雲海</label><br>
+                                    <input type="checkbox" id="eqp7" name="eqp" value="">
+                                    <label for="eqp7">夜景</label><br>
+                                    <input type="checkbox" id="eqp8" name="eqp" value="">
+                                    <label for="eqp8">近溪流</label><br>
+                                    <input type="checkbox" id="eqp9" name="eqp" value="">
+                                    <label for="eqp9">近海邊</label><br>
+                                    <input type="checkbox" id="eqp10" name="eqp" value="">
+                                    <label for="eqp10">釣魚</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h3>景觀景點</h3>
+                                    <input type="checkbox" id="eqp11" name="eqp" value="">
+                                    <label for="eqp11">有雨棚</label><br>
+                                    <input type="checkbox" id="eqp12" name="eqp" value="">
+                                    <label for="eqp12">團露大草皮</label><br>
+                                    <input type="checkbox" id="eqp13" name="eqp" value="">
+                                    <label for="eqp13">小包區</label><br>
+                                    <input type="checkbox" id="eqp14" name="eqp" value="">
+                                    <label for="eqp14">兒童遊樂區</label><br>
+                                    <input type="checkbox" id="eqp15" name="eqp" value="">
+                                    <label for="eqp15">少帳包場</label>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="btnArea col justify-content-end">
+                                <a href="#" class="clear " id="clearAll">清除全部選項</a>
+                                <button class="btn" id="submitBtn">立即搜尋</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- 日期 -->
-                    <div class="btn-group  mx-1">
-                        <button type="button" class="text-left text-white btn selectBtn dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="mx-2 far fa-calendar-alt"></i></i>日期
+
+                    <!-- 星級評分 -->
+                    <div class="myDropdown ">
+                        <!-- 下拉式選單 -->
+                        <button class="myDropbtn">星級評分
+                            <i class="fa fa-caret-down"></i>
                         </button>
+                        <!-- 選單內容 -->
+                        <div class="myDropdown-content">
+                            <div class="myRow row p-4">
+                                <div class="col-lg-12">
+
+                                    <input type="radio" id="class_1" name="level" value="1">
+                                    <label for="class_1">四星以上</label><br>
+                                    <input type="radio" id="class_2" name="level" value="2">
+                                    <label for="class_2">三星 ~ 四星</label><br>
+                                    <input type="radio" id="class_3" name="level" value="3">
+                                    <label for="class_3">二星 ~ 三星</label><br>
+                                    <input type="radio" id="class_4" name="level" value="4">
+                                    <label for="class_4">二星以下</label><br>
+
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="btnArea col justify-content-end">
+                                <a href="#" class="clear " id="clearAll">清除全部選項</a>
+                                <button class="btn" id="submitBtn">立即搜尋</button>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <!-- 帳數 -->
-                    <div class="btn-group  mx-1">
-                        <label for="tentQty">
-                            <!-- <i class="mx-2 far fa-calendar-alt"></i></i>帳數 -->
-                        </label>
-                        <input type="number" class="text-left text-white btn selectBtn" name="tentQty" id="tentQty">
-                    </div>
-                    <!-- 送出 -->
-                    <div class="btn-group  mx-1">
-                        <button type="button" class="text-center btn  checkBtn ">立即搜尋</button>
-                    </div>
-                </form>
+
+                </div>
+
             </div>
-            <!-- SubSelector -->
+
 
 
         </section>
+
 
 
         <!-- Themes icon  -->

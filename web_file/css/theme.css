@@ -26,6 +26,10 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+button:focus, a:focus {
+    outline: none;
+}
+
 a a:hover {
     text-decoration: none;
 }
@@ -54,105 +58,9 @@ body {
 
 .imgArea {
     width: 100%;
-    height: calc(75vh - 80px);
+    height: calc(75vh - 50px);
     object-fit: cover;
     object-position: bottom;
-}
-
-/* ＭＡＩＮ ＳＥＬＥＣＴＯＲ
-===================================*/
-
-#selector {
-    height: 100px;
-    position: absolute;
-    bottom: 80px;
-    background-color: var(--primary);
-    padding-top: 25px;
-}
-
-#selector .custom-select {
-    position: relative;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-/*hide original SELECT element: */
-
-#selector select {
-    display: none;
-}
-
-#selector .select-selected {
-    background-color: var(--primary);
-}
-
-/* Style the arrow inside the select element: */
-
-#selector .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-
-#selector .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-
-.select-items div, .select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-}
-
-/* Style items (options): */
-
-.select-items {
-    position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-
-.select-hide {
-    display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* ----- */
-
-.selectBtn {
-    height: 50px;
-    width: 150px;
-    font-size: 1rem;
-    border: 2px solid white;
-    border-radius: 0;
-}
-
-.checkBtn {
-    height: 50px;
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 0;
-    background-color: white;
-    color: var(--primary);
 }
 
 /* 主題目錄：四大主題圖示
@@ -160,6 +68,7 @@ body {
 
 #themeArea {
     height: 250px;
+    margin-top: 50px;
 }
 
 .themeIcon {
